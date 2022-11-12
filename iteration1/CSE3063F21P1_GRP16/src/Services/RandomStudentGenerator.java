@@ -2,6 +2,8 @@ package Services;
 
 import Models.Student;
 
+import java.util.ArrayList;
+
 public class RandomStudentGenerator {
 
 
@@ -9,8 +11,10 @@ public class RandomStudentGenerator {
     private String[] lastNames = {"tuncer","pala","kaya"};
 
 
-    public void GenerateRandomStudents(int count){
+    public ArrayList<Student> GenerateRandomStudents(int count){
 
+
+        ArrayList<Student> students = new ArrayList<Student>();
 
         for (int i = 0; i <= count; i = i + 1) {
 
@@ -20,9 +24,11 @@ public class RandomStudentGenerator {
             Student tempForStudendt = new Student(newName,newLastName);
 
 
+            students.add(tempForStudendt);
+
         }
 
-
+return students;
 
 
     }

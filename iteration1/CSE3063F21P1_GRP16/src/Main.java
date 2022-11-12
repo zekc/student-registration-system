@@ -1,6 +1,7 @@
-import Models.Course;
-import Models.CourseSession;
-import Models.Semester;
+import Models.*;
+import Services.CourseRegistrationSystem;
+import Services.RandomAdvisorCreator;
+import Services.RandomStudentGenerator;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,21 +16,27 @@ import java.util.ArrayList;
 public class Main {
 
 
-
+    static CourseRegistrationSystem registrationSystem;
 
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
 
 
         ArrayList<Course> fullCourseList = InitCourses("src/lectures.json");
+        RandomStudentGenerator generator = new RandomStudentGenerator();
+        RandomAdvisorCreator advisorCreator = new RandomAdvisorCreator();
+        registrationSystem = new CourseRegistrationSystem();
+
+        ArrayList<Advisor> advisors = new ArrayList<Advisor>();
+        ArrayList<Student> students = new ArrayList<Student>();
+
+
+       advisors = advisorCreator.GenerateRandomAdv(5);
+       students = generator.GenerateRandomStudents(10);
 
 
 
 
-
-        for (int i = 0; i < 5; i++) {
-            System.out.println(fullCourseList.get(i).coursename);
-        }
 
 
 
@@ -88,6 +95,8 @@ public class Main {
         System.out.println(pathOf);
         return new JSONObject(content);
     }
+
+
 
 
 
