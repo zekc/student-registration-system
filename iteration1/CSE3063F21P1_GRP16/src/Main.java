@@ -22,6 +22,11 @@ public class Main {
 
 
         ArrayList<Course> fullCourseList = InitCourses("src/lectures.json");
+
+
+
+
+
         for (int i = 0; i < 5; i++) {
             System.out.println(fullCourseList.get(i).coursename);
         }
@@ -83,6 +88,10 @@ public class Main {
         System.out.println(pathOf);
         return new JSONObject(content);
     }
+
+
+
+
 
 
     private static void FileCreator(){
