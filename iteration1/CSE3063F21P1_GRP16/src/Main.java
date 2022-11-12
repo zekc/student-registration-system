@@ -35,6 +35,26 @@ public class Main {
        students = generator.GenerateRandomStudents(10);
 
 
+        for (int i = 0; i < students.size(); i = i + 1) {
+
+        students.get(i).setAdvisor(advisors.get((int) (Math.random()*advisors.size())));
+
+        }
+
+
+
+
+
+
+
+        for (int i = 0; i < students.size(); i = i + 1) {
+
+
+        System.out.println(students.get(i).name + " "+ students.get(i).lastname);
+        }
+
+
+
 
 
 

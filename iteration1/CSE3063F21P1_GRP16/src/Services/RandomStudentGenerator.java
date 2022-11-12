@@ -16,10 +16,10 @@ public class RandomStudentGenerator {
 
         ArrayList<Student> students = new ArrayList<Student>();
 
-        for (int i = 0; i <= count; i = i + 1) {
+        for (int i = 0; i < count; i = i + 1) {
 
             String newName = names[(int) (Math.random()*names.length)];
-            String newLastName = names[(int) (Math.random()*lastNames.length)];
+            String newLastName = lastNames[(int) (Math.random()*lastNames.length)];
 
             Student tempForStudendt = new Student(newName,newLastName);
 
