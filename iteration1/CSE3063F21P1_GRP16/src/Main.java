@@ -2,6 +2,7 @@ import Models.*;
 import Services.CourseRegistrationSystem;
 import Services.RandomAdvisorCreator;
 import Services.RandomStudentGenerator;
+import Types.SemesterName;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -89,7 +90,7 @@ public class Main {
 
             int credit = course.getInt("credit");
             int requiredCredits = course.getInt("requiredCredits");
-            Semester courseSemester = new Semester(course.getInt("courseSemester"));
+            Semester courseSemester = new Semester(course.getInt("courseSemester"), SemesterName.FALL);
 
             JSONArray preRequisiteJSON = new JSONArray(course.getJSONArray("preRequisiteCourse"));
             ArrayList<String> preRequisites = new ArrayList<String>();
