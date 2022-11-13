@@ -4,10 +4,10 @@ public class Payment{
 
     private int PaymentAmount;
 
-    public int getPayment(){
+    public int getPaymentAmount(){
         return PaymentAmount;
     }
-    public void setPayment(int paymentAmount){
+    public void setPaymentAmount(int paymentAmount){
         PaymentAmount= paymentAmount;
     }
 }
