@@ -90,7 +90,15 @@ public class Main {
 
             int credit = course.getInt("credit");
             int requiredCredits = course.getInt("requiredCredits");
-            Semester courseSemester = new Semester(course.getInt("courseSemester"), SemesterName.FALL);
+
+
+            SemesterName sem = SemesterName.SPRING;
+            if(course.getInt("courseSemester") % 2 == 0){
+
+                sem = SemesterName.FALL;
+            }
+
+            Semester courseSemester = new Semester(course.getInt("courseSemester"), sem);
 
             JSONArray preRequisiteJSON = new JSONArray(course.getJSONArray("preRequisiteCourse"));
             ArrayList<String> preRequisites = new ArrayList<String>();
