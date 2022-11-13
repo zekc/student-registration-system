@@ -14,6 +14,9 @@ public class StudentID {
         this.studentEntryYear = getStudentEntryYear;
         this.studentEntryOrder = studentEntryOrder;
     }
-
+    
+    public int getStudentID() {
+        return StudentID;
+    }
 
 }
