@@ -1,11 +1,13 @@
 package Models;
 import java.util.ArrayList;
 
-public class Transcript extends Student {
+public class Transcript {
     public double GPA;
     public ArrayList<Course> passedCourses;
     public ArrayList<Course> failedCourses;
-    
+
+
+
 	public double getGPA() {
 		return GPA;
 	}

@@ -3,9 +3,16 @@ public class Student extends Person {
     
     private StudentID studentID;
     private Advisor advisor;
+
+    public Student(String newName, String newLastName) {
+        super();
+    }
     //private Transcript transcript;
     //private ArrayList<Course> selectedCourses;
     //private Payment paymentAmount;
+
+
+    
 
     public StudentID getStudentID() {
         return studentID;

@@ -43,15 +43,16 @@ public class Main {
 
 
 
+        for (int i = 0; i < fullCourseList.size(); i = i + 1) {
 
 
+           System.out.println(fullCourseList.get(i).coursename);
 
-
-        for (int i = 0; i < students.size(); i = i + 1) {
-
-
-        System.out.println(students.get(i).name + " "+ students.get(i).lastname);
         }
+
+
+
+
 
 
 

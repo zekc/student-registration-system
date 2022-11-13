@@ -6,7 +6,14 @@ public class Advisor extends Lecturer{
     
     //private ArrayList<Course> CourseList;
     
+    
+    
+    
     private ArrayList<Student> StudentList;
+
+    public Advisor(String newName, String newLastName) {
+        super();
+    }
 
     public ArrayList<Student> getStudentList() {
         return StudentList;

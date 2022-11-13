@@ -1,8 +1,8 @@
 package Models;
 
 public abstract class Person{
-    private String FirstName;
-    private String LastName;
+    public String FirstName;
+    public String LastName;
     private String PersonMail;
     private int ssn;
 
