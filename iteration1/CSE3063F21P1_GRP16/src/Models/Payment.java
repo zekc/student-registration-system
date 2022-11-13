@@ -2,12 +2,12 @@ package Models;
 
 public class Payment{
 
-    private Payment paymentAmount;
+    private int PaymentAmount;
 
-    public Payment getPayment(){
-        return paymentAmount;
+    public int getPayment(){
+        return PaymentAmount;
     }
-    public void setPayment(Payment paymentAmount){
-        this.paymentAmount= paymentAmount;
+    public void setPayment(int paymentAmount){
+        PaymentAmount= paymentAmount;
     }
 }
