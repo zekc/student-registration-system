@@ -4,10 +4,13 @@ import java.util.ArrayList;
 
 public class Advisor extends Lecturer{
     
-    //private ArrayList<Course> CourseList;
+    private ArrayList<Course> CourseList;
     
     
-    
+    public String courseApprovement (Student student, ArrayList<Course> waitingCourses){
+        //business logic processes will be done
+        return "ok";
+    }
     
     private ArrayList<Student> StudentList;
 

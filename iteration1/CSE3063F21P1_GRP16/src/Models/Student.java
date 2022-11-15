@@ -1,18 +1,50 @@
 package Models;
+
+import Services.CourseRegistrationSystem;
+
+import java.util.ArrayList;
+import java.util.Random;
 public class Student extends Person {
     
     private StudentID studentID;
     private Advisor advisor;
+    private String StudentFirstName;
+    private String StudentLastName;
+    private Transcript transcript;
+    private ArrayList<Course> selectedCourses;
+    private Payment paymentAmount;
 
-    public Student(String newName, String newLastName) {
-        super();
+
+
+    public Student(String newFirstName, String newLastName) {
+        this.setStudentFirstName(newFirstName);
+        this.setStudentLastName(newLastName);
     }
-    //private Transcript transcript;
-    //private ArrayList<Course> selectedCourses;
-    //private Payment paymentAmount;
+    CourseRegistrationSystem courseRegistrationSystem = new CourseRegistrationSystem();
 
 
-    
+    public ArrayList<Course> enrollTheCourse(Student student ) {
+        //this method sends student's selected courses to systems control
+        ArrayList<Course> checkedSelectedCourses = courseRegistrationSystem.checkSelectedCourses(student,selectedCourses);
+        return checkedSelectedCourses;
+    }
+    public String sendToApprove (Student student, ArrayList<Course> checkedSelectedCourses){
+        String message = advisor.courseApprovement(student,checkedSelectedCourses);
+        return message;
+    }
+    public ArrayList<Course> selectTheCourse (ArrayList<Course> courses){
+        Random rand = new Random();
+        // generate random 5 courses that the student selected
+        for (int i = 0; i < 5; i++) {
+            int int_random = rand.nextInt(courses.size());
+            selectedCourses.add(courses.get(int_random));
+            courses.remove(int_random);
+        }
+        return selectedCourses;
+    }
+
+
+
 
     public StudentID getStudentID() {
         return studentID;
@@ -28,6 +60,46 @@ public class Student extends Person {
 
     public void setAdvisor(Advisor advisor) {
         this.advisor = advisor;
+    }
+
+    public String getStudentFirstName() {
+        return StudentFirstName;
+    }
+
+    public void setStudentFirstName(String studentFirstName) {
+        StudentFirstName = studentFirstName;
+    }
+
+    public String getStudentLastName() {
+        return StudentLastName;
+    }
+
+    public void setStudentLastName(String studentLastName) {
+        StudentLastName = studentLastName;
+    }
+
+    public Transcript getTranscript() {
+        return transcript;
+    }
+
+    public void setTranscript(Transcript transcript) {
+        this.transcript = transcript;
+    }
+
+    public ArrayList<Course> getSelectedCourses() {
+        return selectedCourses;
+    }
+
+    public void setSelectedCourses(ArrayList<Course> selectedCourses) {
+        this.selectedCourses = selectedCourses;
+    }
+
+    public Payment getPaymentAmount() {
+        return paymentAmount;
+    }
+
+    public void setPaymentAmount(Payment paymentAmount) {
+        this.paymentAmount = paymentAmount;
     }
 }
 
