@@ -2,6 +2,7 @@ import Models.*;
 import Services.CourseRegistrationSystem;
 import Services.RandomAdvisorCreator;
 import Services.RandomStudentGenerator;
+import Types.CourseType;
 import Types.SemesterName;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,7 +48,7 @@ public class Main {
         for (int i = 0; i < fullCourseList.size(); i = i + 1) {
 
 
-           System.out.println(fullCourseList.get(i).coursename);
+           System.out.println(fullCourseList.get(i).getCourseName());
 
         }
 
@@ -87,6 +88,8 @@ public class Main {
         ArrayList<Course> courseList = new ArrayList<>();
         for (JSONObject course : courseJSON) {
             String courseName = course.getString("courseName");
+            String courseCode = course.getString("courseCode");
+
 
             int credit = course.getInt("credit");
             int requiredCredits = course.getInt("requiredCredits");
@@ -98,6 +101,8 @@ public class Main {
                 sem = SemesterName.FALL;
             }
 
+            CourseType courseType = CourseType.NTE;
+
             Semester courseSemester = new Semester(course.getInt("courseSemester"), sem);
 
             JSONArray preRequisiteJSON = new JSONArray(course.getJSONArray("preRequisiteCourse"));
@@ -108,13 +113,29 @@ public class Main {
             }
 
             JSONArray courseSessionsJSONObjects = new JSONArray(course.getJSONArray("courseSessions"));
+
+
+
             ArrayList<CourseSession> courseSessions = new ArrayList<>();
 
             for (int i = 0; i < courseSessionsJSONObjects.length(); i++) {
                 courseSessions.add(new CourseSession((JSONObject) courseSessionsJSONObjects.get(i)));
             }
-            Course _course = new Course(courseName, credit, preRequisites, courseSessions, requiredCredits, courseSemester);  // CourseType will be dynamic.
-            courseList.add(_course);
+
+
+    JSONObject JO = (JSONObject) courseSessionsJSONObjects.get(0);
+            int quota = JO.getInt("quota");
+
+            String prereq = "non";
+
+            if(preRequisites.size() > 0){
+
+                prereq = preRequisites.get(0);
+            }
+
+          //  Course _course = new Course(courseName, credit, preRequisites, courseSessions, requiredCredits, courseSemester);  // CourseType will be dynamic.
+         Course _course = new Course(courseName,courseCode,quota,prereq,credit,courseSemester,courseType,courseSessions);
+           courseList.add(_course);
         }
         return courseList;
     }

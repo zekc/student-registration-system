@@ -1,8 +1,8 @@
 package Models;
 
-import java.sql.Time;
-
 import org.json.JSONObject;
+
+import java.sql.Time;
 
 public class CourseSession {
 
@@ -12,7 +12,8 @@ public class CourseSession {
     public Time getTime(){
         return LectureHour;
     }
-     
+
+
     public String getLectureHall(){
         return LectureHall;
     }
@@ -29,5 +30,9 @@ public class CourseSession {
 
 
     public CourseSession(JSONObject jsonObject) {
+
+
+
+
     }
 }
