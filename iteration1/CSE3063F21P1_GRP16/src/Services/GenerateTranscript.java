@@ -1,11 +1,11 @@
 package Services;
-import java.util.UUID;
 
 import Models.Course;
 import Models.Grade;
 import Models.Transcript;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class GenerateTranscript {
     private String ID;
@@ -18,7 +18,7 @@ public class GenerateTranscript {
 
     public void generateCourseStatus(ArrayList<Course> coursesArrayList) {
         Grade grade = new Grade();
-        Transcript transcript = new Transcript();
+        Transcript transcript = new Transcript(coursesArrayList);
         ArrayList<Course> passed = new ArrayList<>();
         ArrayList<Course> failed = new ArrayList<>();
 

@@ -15,8 +15,13 @@ public class StudentID {
         this.studentEntryOrder = studentEntryOrder;
     }
     
-    public int getStudentID() {
-        return 150118000;
+    //public int getStudentID() {return 150118000;}
+
+    public String getStudentString(){
+
+       return  1501+studentEntryYear+studentEntryOrder;
+
     }
+
 
 }
