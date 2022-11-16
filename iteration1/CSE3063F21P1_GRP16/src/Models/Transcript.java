@@ -7,7 +7,7 @@ public class Transcript {
     public double GPA;
     public ArrayList<Course> passedCourses;
     public ArrayList<Course> failedCourses;
-
+	private Semester semester;
 
 	public Transcript(ArrayList<Course> Courses){
 
@@ -34,7 +34,9 @@ public class Transcript {
 
 
 	}
-
+	public boolean addCourses(Student student, ArrayList<Course> courses){
+		return true;
+	}
 
 	public double getGPA() {
 		return GPA;
@@ -56,5 +58,11 @@ public class Transcript {
 	}
 
 
+	public Semester getSemester() {
+		return semester;
+	}
 
+	public void setSemester(Semester semester) {
+		this.semester = semester;
+	}
 }
