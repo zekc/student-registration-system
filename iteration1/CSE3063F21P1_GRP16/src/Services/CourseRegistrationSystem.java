@@ -23,6 +23,8 @@ public class CourseRegistrationSystem {
                 if (passedCourses != null &&
                         passedCourses.indexOf(course.getPrerequisiteCourse()) != -1) {
                     checkedCourses.add(course);
+                } else {
+                    System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to unmet prerequisities.");
                 }
             } else {
                 checkedCourses.add(course);
