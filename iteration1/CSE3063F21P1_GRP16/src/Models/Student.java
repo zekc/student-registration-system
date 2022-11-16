@@ -26,6 +26,8 @@ public class Student extends Person {
         LastName = newLastName;
         transcript = new Transcript();
 
+
+
     }
     CourseRegistrationSystem courseRegistrationSystem = new CourseRegistrationSystem();
 
@@ -64,7 +66,7 @@ public class Student extends Person {
             JSONArray passedCourses = new JSONArray();
 
         for (int i = 0; i <= passedCourses.length(); i = i + 1) {
-           passedCourses.put(transcript.passedCourses.get(i).getCourseCode());
+          // passedCourses.put(transcript.passedCourses.get(i).getCourseCode());
         }
 
             obj.put("TranskriptObj",Trans);

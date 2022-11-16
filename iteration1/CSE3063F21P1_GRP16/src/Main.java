@@ -8,6 +8,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -20,8 +21,16 @@ public class Main {
 
     static CourseRegistrationSystem registrationSystem;
 
+
+
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
+
+
+
+       File StudentsFile = new File("src/students");
+       DeleteDirectory(StudentsFile);
+        //Arrays.stream(new File("/ABC/").listFiles()).forEach(File::delete);
 
 
         ArrayList<Course> fullCourseList = InitCourses("src/lectures.json");
@@ -41,7 +50,7 @@ public class Main {
 
         students.get(i).setAdvisor(advisors.get((int) (Math.random()*advisors.size())));
 
-        
+
         }
 
         students.get(0).saveToJson();
@@ -67,6 +76,14 @@ public class Main {
 
 
 
+    }
+
+    public static void DeleteDirectory(File dir) {
+        for (File file: dir.listFiles()) {
+            if (file.isDirectory())
+                DeleteDirectory(file);
+            file.delete();
+        }
     }
 
     private static ArrayList<Course> InitCourses(String fileName) throws IOException {

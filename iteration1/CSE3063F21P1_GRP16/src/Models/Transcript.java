@@ -13,6 +13,7 @@ public class Transcript {
 
 
 
+		passedCourses = new ArrayList<Course>();
 	}
 
 
