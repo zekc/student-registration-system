@@ -1,35 +1,40 @@
 package Services;
 
 import Models.Student;
+import Models.StudentID;
 
 import java.util.ArrayList;
 
 public class RandomStudentGenerator {
 
+    private static final String[] firstNames = { "Charmane",
+            "Guillema", "Ruthann", "Welsh", "Garold", "Mitchael", "Noellyn", "Antony", "Rafaellle", "Russ", "Noami",
+            "Adler", "Michelle", "Farleigh", "Hertha", "Lucias", "Benedetta", "Fawnia", "Rebe", "Linda", "Mathian",
+            "Consuela", "Cal", "Kalle", "Natale", "Athena", "Hervey", "Tilly", "Veronike", "Karl", "Joann", "Raddy",
+            "Darren", "Lynnet", "Kaycee", "Brendin", "Oliy", "Magnum", "Tedra", "Marlin", "Velvet", "Helaine",
+            "Rebecca", "Natty", "Micky", "Perla", "Kelli", "Garik", "Lucie", "Hollis" };
 
-    private String[] names = {"ali","veli","mahmut"};
-    private String[] lastNames = {"tuncer","pala","kaya"};
+    private static final String[] lastNames = { "Gallety", "Scurman", "Gulliman", "Domini", "De Caroli", "Durrance",
+            "Wozencroft", "Jaqueme", "Campsall", "Chicchelli", "Twydell", "Nowak", "McMillam", "Frood", "Treharne",
+            "Dennant", "Clewes", "Moring", "Rankcom", "O'Hanley", "Snodin", "Grigoriev", "Benterman", "Waber",
+            "Skouling", "Renihan", "Wilks", "Musson", "Letham", "Mcettrick", "Vieyra", "Tatnell", "Cymper", "Muckeen",
+            "Cuxon", "Itzik", "Late", "Sugden", "Wodeland", "MacGahy", "Garric", "Bockman", "Denisovich", "Basnett",
+            "Welham", "Luchelli", "Boome", "Gannaway", "Saice", "Greenhough" };
 
-
-    public ArrayList<Student> GenerateRandomStudents(int count){
-
-
+    public ArrayList<Student> GenerateRandomStudents(int count) {
         ArrayList<Student> students = new ArrayList<Student>();
 
-        for (int i = 0; i < count; i = i + 1) {
+        for (int i = 0; i < count; i++) {
+            StudentID studentID = new StudentID("150121823");
+            String newFirstName = firstNames[(int) (Math.random() * firstNames.length)];
+            String newLastName = lastNames[(int) (Math.random() * lastNames.length)];
 
-            String newName = names[(int) (Math.random()*names.length)];
-            String newLastName = lastNames[(int) (Math.random()*lastNames.length)];
+            Student student = new Student(newFirstName, newLastName);
+            student.setStudentID(studentID);
 
-            Student tempForStudendt = new Student(newName,newLastName);
-
-
-            students.add(tempForStudendt);
-
+            students.add(student);
         }
 
-return students;
-
-
+        return students;
     }
 }
