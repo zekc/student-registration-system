@@ -3,7 +3,6 @@ import Types.CourseType;
 
 import java.util.*;
 
-
 public class Course {
 
     private String courseName;
@@ -13,7 +12,7 @@ public class Course {
     private int credits;
     private Semester courseSemesterName;
     private CourseType courseType ; //1..8(Semester number),FTE,NTE,UE,TE
-    private ArrayList<CourseSession> sessions= new ArrayList<CourseSession>();
+    private ArrayList<CourseSession> sessions= new ArrayList<CourseSession>();//includes all sessions,and their informations like day and hour
 
 
     public Course(String courseName, String courseCode, int quota, String prerequisiteCourse, int credits,
@@ -28,6 +27,8 @@ public class Course {
         this.courseType = courseType;
         this.sessions = sessions;
     }
+
+    //getters and setters
     public String getCourseName() {
         return courseName;
     }
@@ -61,7 +62,6 @@ public class Course {
     public Semester getCourseSemesterName() {
         return courseSemesterName;
     }
-
 
     public ArrayList<CourseSession> getSessions() {
         return sessions;
