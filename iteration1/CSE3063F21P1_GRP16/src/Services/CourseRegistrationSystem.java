@@ -10,4 +10,7 @@ public class CourseRegistrationSystem {
         ArrayList<Course> checkedCourses = courses;
         return checkedCourses;
     }
+    public boolean addApprovedCoursesToTranscript(Student student, ArrayList<Course> courses){
+        return student.getTranscript().addCourses(student, courses);
+    }
 }

@@ -8,8 +8,23 @@ public class Advisor extends Lecturer{
     
     
     public String courseApprovement (Student student, ArrayList<Course> waitingCourses){
-        //business logic processes will be done
-        return "ok";
+        // Removing disapproved courses from approvement list and adding reminding parts to the transcript through registration system
+        ArrayList<Integer> disApprovedCourses = new ArrayList<Integer>();
+        for (int i = 0; i < waitingCourses.size(); i++) {
+            if(student.getTranscript().getSemester()!=waitingCourses.get(i).getCourseSemesterName()){
+                disApprovedCourses.add(i);
+            }
+        }
+        for (int i = 0; i < disApprovedCourses.size(); i++) {
+            waitingCourses.remove(disApprovedCourses.get(i));
+        }
+        if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, waitingCourses)){
+            return "Successfully Approved";
+        }
+        else {
+            return "Failed to register";
+        }
+
     }
     
     private ArrayList<Student> StudentList;

@@ -26,8 +26,6 @@ public class Student extends Person {
         LastName = newLastName;
         transcript = new Transcript();
 
-
-
     }
     CourseRegistrationSystem courseRegistrationSystem = new CourseRegistrationSystem();
 
@@ -38,6 +36,7 @@ public class Student extends Person {
         return checkedSelectedCourses;
     }
     public String sendToApprove (Student student, ArrayList<Course> checkedSelectedCourses){
+        //student sends the checked courses by the registration system to his/her advisor
         String message = advisor.courseApprovement(student,checkedSelectedCourses);
         return message;
     }
@@ -53,9 +52,6 @@ public class Student extends Person {
     }
 
     public void saveToJson(){
-
-
-
 
             JSONObject obj = new JSONObject();
             obj.put("Name", FirstName);
