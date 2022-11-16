@@ -1,5 +1,6 @@
 package Services;
 
+import Models.Course;
 import Models.Student;
 
 import java.util.ArrayList;
@@ -11,7 +12,9 @@ public class RandomStudentGenerator {
     private String[] lastNames = {"tuncer","pala","kaya"};
 
 
-    public ArrayList<Student> GenerateRandomStudents(int count){
+
+
+    public ArrayList<Student> GenerateRandomStudents(int count, ArrayList<Course> courses){
 
 
         ArrayList<Student> students = new ArrayList<Student>();
@@ -21,7 +24,7 @@ public class RandomStudentGenerator {
             String newName = names[(int) (Math.random()*names.length)];
             String newLastName = lastNames[(int) (Math.random()*lastNames.length)];
 
-            Student tempForStudendt = new Student(newName,newLastName);
+            Student tempForStudendt = new Student(newName,newLastName,courses);
 
 
             students.add(tempForStudendt);

@@ -1,24 +1,31 @@
 package Models;
 
 import Services.CourseRegistrationSystem;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 public class Student extends Person {
     
     private StudentID studentID;
     private Advisor advisor;
-    private String StudentFirstName;
-    private String StudentLastName;
+
     private Transcript transcript;
     private ArrayList<Course> selectedCourses;
     private Payment paymentAmount;
 
+    private static FileWriter file;
 
+    public Student(String newFirstName, String newLastName,ArrayList<Course> allCourses) {
 
-    public Student(String newFirstName, String newLastName) {
-        this.setStudentFirstName(newFirstName);
-        this.setStudentLastName(newLastName);
+        studentID = new StudentID("CSE", Integer.toString((int)Math.max(18,Math.random()*20)),Integer.toString((int)(Math.random()*50)));
+        FirstName = newFirstName;
+        LastName = newLastName;
+        transcript = new Transcript();
+
     }
     CourseRegistrationSystem courseRegistrationSystem = new CourseRegistrationSystem();
 
@@ -43,6 +50,45 @@ public class Student extends Person {
         return selectedCourses;
     }
 
+    public void saveToJson(){
+
+
+
+
+            JSONObject obj = new JSONObject();
+            obj.put("Name", FirstName);
+            obj.put("LastName", LastName);
+
+            JSONObject Trans  = new JSONObject();
+            Trans.put("gpa",transcript.getGPA());
+            JSONArray passedCourses = new JSONArray();
+
+        for (int i = 0; i <= passedCourses.length(); i = i + 1) {
+           passedCourses.put(transcript.passedCourses.get(i).getCourseCode());
+        }
+
+            obj.put("TranskriptObj",Trans);
+            try {
+                // Constructs a FileWriter given a file name, using the platform's default charset
+                file = new FileWriter("src/students/" + studentID.getStudentString() +".json");
+                file.write(obj.toString());
+                System.out.println("json created");
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    file.flush();
+                    file.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+
+
+    }
+
 
 
 
@@ -62,21 +108,7 @@ public class Student extends Person {
         this.advisor = advisor;
     }
 
-    public String getStudentFirstName() {
-        return StudentFirstName;
-    }
 
-    public void setStudentFirstName(String studentFirstName) {
-        StudentFirstName = studentFirstName;
-    }
-
-    public String getStudentLastName() {
-        return StudentLastName;
-    }
-
-    public void setStudentLastName(String studentLastName) {
-        StudentLastName = studentLastName;
-    }
 
     public Transcript getTranscript() {
         return transcript;

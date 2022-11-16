@@ -34,21 +34,24 @@ public class Main {
 
 
        advisors = advisorCreator.GenerateRandomAdv(5);
-       students = generator.GenerateRandomStudents(10);
+       students = generator.GenerateRandomStudents(10,fullCourseList);
 
 
         for (int i = 0; i < students.size(); i = i + 1) {
 
         students.get(i).setAdvisor(advisors.get((int) (Math.random()*advisors.size())));
 
+        
         }
+
+        students.get(0).saveToJson();
 
 
 
         for (int i = 0; i < fullCourseList.size(); i = i + 1) {
 
 
-           System.out.println(fullCourseList.get(i).getCourseName());
+         //  System.out.println(fullCourseList.get(i).getCourseName());
 
         }
 
@@ -137,7 +140,13 @@ public class Main {
          Course _course = new Course(courseName,courseCode,quota,prereq,credit,courseSemester,courseType,courseSessions);
            courseList.add(_course);
         }
+
+
+
         return courseList;
+
+
+
     }
 
     public static JSONObject parseJSONFile(String filename) throws JSONException, IOException {

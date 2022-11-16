@@ -1,11 +1,19 @@
 package Models;
+
 import java.util.ArrayList;
+
 
 public class Transcript {
     public double GPA;
     public ArrayList<Course> passedCourses;
     public ArrayList<Course> failedCourses;
 
+
+	public Transcript(){
+
+
+
+	}
 
 
 	public double getGPA() {
@@ -26,4 +34,7 @@ public class Transcript {
 	public void setFailedCourses(ArrayList<Course> failedCourses) {
 		this.failedCourses = failedCourses;
 	}
+
+
+
 }

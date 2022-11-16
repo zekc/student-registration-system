@@ -19,4 +19,11 @@ public class StudentID {
         return 150118000;
     }
 
+    public String getStudentString(){
+
+       return  1501+studentEntryYear+studentEntryOrder;
+
+    }
+
+
 }
