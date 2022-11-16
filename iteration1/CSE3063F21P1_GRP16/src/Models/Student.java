@@ -24,7 +24,7 @@ public class Student extends Person {
         studentID = new StudentID("CSE", Integer.toString((int)Math.max(18,Math.random()*20)),Integer.toString((int)(Math.random()*50)));
         FirstName = newFirstName;
         LastName = newLastName;
-        transcript = new Transcript();
+        transcript = new Transcript(allCourses);
 
 
 
@@ -65,16 +65,28 @@ public class Student extends Person {
             Trans.put("gpa",transcript.getGPA());
             JSONArray passedCourses = new JSONArray();
 
+        for (int i = 0; i < transcript.passedCourses.size() ; i = i +1) {
+        passedCourses.put(transcript.passedCourses.get(i).getCourseCode());
+        }
+
+        JSONArray failedCourses = new JSONArray();
+        for (int i = 0; i < transcript.failedCourses.size() ; i = i +1) {
+           failedCourses.put(transcript.failedCourses.get(i).getCourseCode());
+        }
+
+        obj.put("PassedCourses",passedCourses);
+        obj.put("FailedCourses",failedCourses);
+
         for (int i = 0; i <= passedCourses.length(); i = i + 1) {
           // passedCourses.put(transcript.passedCourses.get(i).getCourseCode());
         }
 
             obj.put("TranskriptObj",Trans);
             try {
-                // Constructs a FileWriter given a file name, using the platform's default charset
+
                 file = new FileWriter("src/students/" + studentID.getStudentString() +".json");
                 file.write(obj.toString());
-                System.out.println("json created");
+               // System.out.println("json created");
 
             } catch (IOException e) {
                 e.printStackTrace();

@@ -9,11 +9,30 @@ public class Transcript {
     public ArrayList<Course> failedCourses;
 
 
-	public Transcript(){
+	public Transcript(ArrayList<Course> Courses){
 
 
 
 		passedCourses = new ArrayList<Course>();
+		failedCourses = new ArrayList<Course>();
+
+
+	int	PassedAmount = (int) (Math.random()*15);
+	int RandomFailed = (int) (Math.random()*PassedAmount);
+		for (int i = 0; i < PassedAmount ; i = i +1) {
+			if(i == RandomFailed){
+
+
+				failedCourses.add(Courses.get(i));
+			}else{
+
+				passedCourses.add(Courses.get(i));
+			}
+
+		}
+
+
+
 	}
 
 

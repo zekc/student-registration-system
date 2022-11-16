@@ -24,13 +24,13 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Hello world!");
+        ;
 
 
 
        File StudentsFile = new File("src/students");
        DeleteDirectory(StudentsFile);
-        //Arrays.stream(new File("/ABC/").listFiles()).forEach(File::delete);
+        
 
 
         ArrayList<Course> fullCourseList = InitCourses("src/lectures.json");
@@ -51,16 +51,18 @@ public class Main {
         students.get(i).setAdvisor(advisors.get((int) (Math.random()*advisors.size())));
 
 
+        students.get(i).saveToJson();
+
         }
 
-        students.get(0).saveToJson();
+
 
 
 
         for (int i = 0; i < fullCourseList.size(); i = i + 1) {
 
 
-         //  System.out.println(fullCourseList.get(i).getCourseName());
+        //  System.out.println(fullCourseList.get(i).getCourseName());
 
         }
 
