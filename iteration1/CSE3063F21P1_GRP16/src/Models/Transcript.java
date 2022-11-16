@@ -1,5 +1,7 @@
 package Models;
 
+import Types.SemesterName;
+
 import java.util.ArrayList;
 
 
@@ -10,6 +12,15 @@ public class Transcript {
 	private Semester semester;
 
 	public Transcript(ArrayList<Course> Courses){
+
+
+	if( Math.random()*2 == 0){
+		semester = new Semester(4, SemesterName.FALL);
+
+	}else {
+
+		semester =  new Semester(4, SemesterName.SPRING);
+	}
 
 
 
