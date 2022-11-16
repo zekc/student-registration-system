@@ -21,7 +21,7 @@ public class Student extends Person {
 
     public Student(String newFirstName, String newLastName,ArrayList<Course> allCourses) {
 
-        studentID = new StudentID("CSE", Integer.toString((int)Math.max(18,Math.random()*20)),Integer.toString((int)(Math.random()*50)));
+        studentID = new StudentID("CSE", Integer.toString((int)Math.max(18,Math.random()*20)),Integer.toString(Math.max(10,((int)(Math.random()*50) ))));
         FirstName = newFirstName;
         LastName = newLastName;
         transcript = new Transcript(allCourses);
