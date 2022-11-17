@@ -24,7 +24,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        ;
+
 
 
 
@@ -38,9 +38,11 @@ public class Main {
         RandomAdvisorCreator advisorCreator = new RandomAdvisorCreator();
         registrationSystem = new CourseRegistrationSystem();
 
+
+
         ArrayList<Advisor> advisors = new ArrayList<Advisor>();
         ArrayList<Student> students = new ArrayList<Student>();
-
+        ArrayList<Course> ThisSemesterCourses =     registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
 
        advisors = advisorCreator.GenerateRandomAdv(5);
        students = generator.GenerateRandomStudents(10,fullCourseList);
@@ -56,15 +58,33 @@ public class Main {
         }
 
 
+        System.out.println(" ");
+System.out.println("Available Classes This Semester: \n");
+
+        for (int i = 0; i < ThisSemesterCourses.size(); i = i + 1) {
 
 
 
-        for (int i = 0; i < fullCourseList.size(); i = i + 1) {
+                System.out.println(ThisSemesterCourses.get(i).getCourseCode());
 
-
-        //  System.out.println(fullCourseList.get(i).getCourseName());
 
         }
+
+        for (int i = 0; i < students.size(); i = i + 1) {
+
+
+            System.out.println(students.get(i).FirstName + " " +  students.get(i).LastName +"is selecting course");
+
+            students.get(i).SelectRandomCourses(ThisSemesterCourses);
+            System.out.println( students.get(i).sendToApprove(students.get(i),students.get(i).getSelectedCourses()));
+
+        }
+
+
+
+
+
+
 
 
 

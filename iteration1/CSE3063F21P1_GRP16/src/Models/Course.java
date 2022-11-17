@@ -27,6 +27,7 @@ public class Course {
         this.courseSemesterName = courseSemesterName;
         this.courseType = courseType;
         this.sessions = sessions;
+        courseSemesterName = semester;
     }
     public String getCourseName() {
         return courseName;

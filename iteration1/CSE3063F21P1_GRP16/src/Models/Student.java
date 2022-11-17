@@ -17,16 +17,25 @@ public class Student extends Person {
     private ArrayList<Course> selectedCourses;
     private Payment paymentAmount;
 
+    private int StudentSemesterNo;
+
+
+
     private static FileWriter file;
 
     public Student(String newFirstName, String newLastName,ArrayList<Course> allCourses) {
 
         studentID = new StudentID("CSE", Integer.toString((int)Math.max(18,Math.random()*20)),Integer.toString(Math.max(10,((int)(Math.random()*50) ))));
+        StudentSemesterNo = (int)(Math.random()*5 + 2);
         FirstName = newFirstName;
         LastName = newLastName;
         transcript = new Transcript(allCourses);
+        selectedCourses = new ArrayList<>();
 
     }
+
+
+
     CourseRegistrationSystem courseRegistrationSystem = new CourseRegistrationSystem();
 
 
@@ -118,6 +127,30 @@ public class Student extends Person {
         this.advisor = advisor;
     }
 
+    public void SelectRandomCourses(ArrayList<Course> avaibleCourses)
+    {
+        selectedCourses.clear();
+       int randomAmount = (int) Math.min(Math.max(5,avaibleCourses.size()*Math.random()),1);
+        for (int i = 0; i < randomAmount; i = i + 1) {
+
+            int randomClass = (int)(avaibleCourses.size()*Math.random());
+            AddCourse(avaibleCourses.get(randomClass));
+
+
+        }
+
+
+    }
+
+    public void AddCourse(Course course){
+
+
+        if(!selectedCourses.contains(course)){
+
+            selectedCourses.add(course);
+        }
+
+    }
 
 
     public Transcript getTranscript() {

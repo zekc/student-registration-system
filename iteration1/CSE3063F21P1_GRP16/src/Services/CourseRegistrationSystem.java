@@ -2,6 +2,7 @@ package Services;
 
 import Models.Course;
 import Models.Student;
+import Types.SemesterName;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,4 +39,18 @@ public class CourseRegistrationSystem {
     }
 
 
+    public  ArrayList<Course> GetAvaibleCourses(SemesterName semester, ArrayList<Course> allCourses) {
+        ArrayList<Course> ACourses = new ArrayList<Course>();
+
+        for (int i = 0; i < allCourses.size(); i = i + 1) {
+
+            if(semester == allCourses.get(i).getCourseSemesterName().getSemesterName()){
+
+                ACourses.add(allCourses.get(i));
+            }
+        }
+
+
+        return ACourses;
+    }
 }
