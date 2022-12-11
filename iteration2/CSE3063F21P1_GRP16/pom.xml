@@ -8,6 +8,12 @@
     <artifactId>CSE3063F21P1_GRP16</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20180130</version>
+    </dependency>
+
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
@@ -20,5 +26,4 @@
             <version>4.13.2</version>
         </dependency>
     </dependencies>
-
 </project>
