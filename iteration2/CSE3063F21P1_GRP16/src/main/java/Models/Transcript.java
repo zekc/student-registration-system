@@ -5,10 +5,10 @@ import Types.SemesterName;
 import java.util.ArrayList;
 
 public class Transcript {
-	public Double GPA;
-	public int credit;
-	public ArrayList<Course> passedCourses;
-	public ArrayList<Course> failedCourses;
+	private Double GPA;
+	private int credit;
+	private ArrayList<Course> passedCourses;
+	private ArrayList<Course> failedCourses;
 	private Semester semester;
 
 	HashMap<Course, Double>
