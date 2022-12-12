@@ -9,12 +9,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
 
@@ -81,21 +84,7 @@ System.out.println("Available Classes This Semester: \n");
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        outputFileCreator( ThisSemesterCourses);
 
 
     }
@@ -202,8 +191,32 @@ System.out.println("Available Classes This Semester: \n");
 
 
 
-    private static void FileCreator(){
+    private static void outputFileCreator( ArrayList<Course> thisSemesterCourses){
 
+    	PrintWriter output=null;
+        try {
+            
+            File outputFile = new File("output.txt");
+        	output=new PrintWriter(outputFile);
+        	
+        	for(int i=0;i<thisSemesterCourses.size();i++) {
+        		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
+        			output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**");
+        			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
+        		
+        		}
+        		}
+        		
+        
+          }
+          catch(FileNotFoundException e)
+          {
+              e.printStackTrace();
+          }
+          finally {
+            if (output != null)output.close();
+          }
+    	
 
 
 
