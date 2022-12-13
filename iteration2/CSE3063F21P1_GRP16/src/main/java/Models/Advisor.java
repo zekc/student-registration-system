@@ -12,12 +12,16 @@ public class Advisor extends Lecturer{
         ArrayList<Integer> disApprovedCourses = new ArrayList<Integer>();
         for (int i = 0; i < waitingCourses.size(); i++) {
             if(student.getTranscript().getSemester()!=waitingCourses.get(i).getCourseSemesterName()){
-            	
-            	if(waitingCourses.get(i).getRequieredCredits()>student.getTranscript().getCompletedCredits()) {
-            		waitingCourses.get(i).getCourseEvents().get(4).getStudents().add(student);//student doesnt have needed number of credits
-            		disApprovedCourses.add(i);
-            	}                
+            	disApprovedCourses.add(i);	
+            	continue;
+            	              
             }
+            
+            if(waitingCourses.get(i).getRequieredCredits()>student.getTranscript().getCompletedCredits()) {
+                System.out.println("Advisor: The course: " + waitingCourses.get(i).getCourseCode() + " not added due to credits");
+        		waitingCourses.get(i).getCourseEvents().get(4).getStudents().add(student);//student doesnt have needed number of credits
+        		disApprovedCourses.add(i);
+        	}  
         }
         for (int i = 0; i < disApprovedCourses.size(); i++) {
             waitingCourses.remove(disApprovedCourses.get(i));
@@ -25,7 +29,7 @@ public class Advisor extends Lecturer{
         
         for (int i = 0; i < waitingCourses.size(); i++) {
         	waitingCourses.get(i).getCourseEvents().get(0).getStudents().add(student);//successfully added student to i'th course
-            
+        	waitingCourses.get(i).setQuota(waitingCourses.get(i).getQuotaCounter()+1);
         }
         
         if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, waitingCourses)){
