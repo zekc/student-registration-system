@@ -6,8 +6,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Transcript {
-	private Double GPA;
+	private double GPA;
 	private int credit;
+	private int completedCredits;
 	private ArrayList<Course> passedCourses;
 	private ArrayList<Course> failedCourses;
 	private Semester semester;
@@ -38,8 +39,14 @@ public class Transcript {
 			} 
 			else {
 				passedCourses.add(Courses.get(i));
+				this.completedCredits+=Courses.get(i).getCredits();
+				
 			}
 		}
+	}
+
+	public int getCompletedCredits() {
+		return completedCredits;
 	}
 
 	public boolean addCourses(Student student, ArrayList<Course> courses) {
@@ -49,8 +56,6 @@ public class Transcript {
 	public double getGPA(Course course) { //get corresponding GPA for the course
 		return gpa_Map.get(course);
 	}
-
-	public double getGPA() {return 3.0;}
 
 	public void setGPA(Course course, Double gpa) {
         gpa_Map.put(course, gpa);
@@ -86,8 +91,5 @@ public class Transcript {
 
 	public void setSemester(Semester semester) {
 		this.semester = semester;
-	}
-
-	public void setGPA(Double genGrade) {
 	}
 }
