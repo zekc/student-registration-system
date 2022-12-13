@@ -39,13 +39,13 @@ public class Main {
         ArrayList<Course> fullCourseList = InitCourses("src/lectures.json");
         RandomStudentGenerator generator = new RandomStudentGenerator();
         RandomAdvisorCreator advisorCreator = new RandomAdvisorCreator();
-        registrationSystem = new CourseRegistrationSystem();
+        registrationSystem = CourseRegistrationSystem.getRegistrationSystem();
 
 
 
         ArrayList<Advisor> advisors = new ArrayList<Advisor>();
         ArrayList<Student> students = new ArrayList<Student>();
-        ArrayList<Course> ThisSemesterCourses =     registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
+        ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
 
        advisors = advisorCreator.GenerateRandomAdv(5);
        students = generator.GenerateRandomStudents(10,fullCourseList);
