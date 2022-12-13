@@ -53,8 +53,8 @@ public class Transcript {
 		return true;
 	}
 
-	public double getGPA(Course course) { //get corresponding GPA for the course
-		return gpa_Map.get(course);
+	public double getGPA() { //get corresponding GPA for the course
+		return this.GPA;
 	}
 
 	public void setGPA(Course course, Double gpa) {
