@@ -14,26 +14,28 @@ public class Course {
     private CourseType courseType ; //1..8(Semester number),FTE,NTE,UE,TE
     private ArrayList<CourseSession> sessions= new ArrayList<CourseSession>();//includes all sessions,and their informations like day and hour
     private ArrayList<CourseEvents> courseEvents;
+    private int quotaCounter;////////////////
+    private int requiredCredits;///////////////////////// 
 
 
-    public Course(String courseName, String courseCode, int quota, String prerequisiteCourse, int credits,
-                  Semester semester, CourseType courseType, ArrayList<CourseSession> sessions) {
+
+
+	public Course(String courseName, String courseCode, int quota, String prerequisiteCourse, int credits,
+                  Semester semester, CourseType courseType, ArrayList<CourseSession> sessions,int requiredCredits) {
 
         this.courseName = courseName;
         this.courseCode = courseCode;
         this.quota = quota;
         this.prerequisiteCourse = prerequisiteCourse;
         this.credits = credits;
-        this.courseSemesterName = courseSemesterName;
+        this.courseSemesterName = semester;
         this.courseType = courseType;
         this.sessions = sessions;
-        courseSemesterName = semester;
-
-
-
+        this.quotaCounter=0;////////////////////
+        this.requiredCredits=requiredCredits;
+        this.courseEvents=new ArrayList<>();
         
-       // setEvents();
-        //Calismiyor bakman lazim
+        setEvents();
     }
     
     private void setEvents() {
@@ -92,6 +94,21 @@ public class Course {
     public void setSessions(ArrayList<CourseSession> sessions) {
         this.sessions = sessions;
     }
+    public int getQuotaCounter() {
+		return quotaCounter;
+	}
+
+	public void setQuotaCounter(int quotaCounter) {
+		this.quotaCounter = quotaCounter;
+	}
+
+	public int getRequieredCredits() {
+		return requiredCredits;
+	}
+
+	public void setRequieredCredits(int requieredCredits) {
+		this.requiredCredits = requieredCredits;
+	}
 
 
 
