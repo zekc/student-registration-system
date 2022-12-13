@@ -7,26 +7,30 @@ public class Advisor extends Lecturer{
     private ArrayList<Course> CourseList;
     
     
-    public String courseApprovement (Student student, ArrayList<Course> waitingCourses){
+    public ArrayList<Course> courseApprovement (Student student, ArrayList<Course> waitingCourses){
         // Removing disapproved courses from approvement list and adding reminding parts to the transcript through registration system
-        ArrayList<Integer> disApprovedCourses = new ArrayList<Integer>();
+        // student wants to take a course from different semester
+        ArrayList<Course> disApprovedCourses = new ArrayList<Course>();
         for (int i = 0; i < waitingCourses.size(); i++) {
             if(student.getTranscript().getSemester()!=waitingCourses.get(i).getCourseSemesterName()){
-                disApprovedCourses.add(i);
+                disApprovedCourses.add(waitingCourses.get(i));
             }
         }
-        for (int i = 0; i < disApprovedCourses.size(); i++) {
-            waitingCourses.remove(disApprovedCourses.get(i));
+        for (Course disApprovedCourse : disApprovedCourses) {
+            System.out.println("Student " + student.getFirstName() + student.getLastName() + " could not take " + disApprovedCourse.getCourseName());
+            waitingCourses.remove(disApprovedCourse);
         }
-        if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, waitingCourses)){
+    return waitingCourses;
+    }
+    public String addingCheckedCourses(Student student , ArrayList<Course> courses){
+        // Method sends checked courses to registration system
+        if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, courses)){
             return "Successfully Approved";
         }
         else {
             return "Failed to register";
         }
-
     }
-    
     private ArrayList<Student> StudentList;
 
     public Advisor(String newName, String newLastName) {

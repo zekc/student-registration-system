@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CourseRegistrationSystem {
+    private static CourseRegistrationSystem instance;
     public ArrayList<Course> checkSelectedCourses(Student student, ArrayList<Course> courses) {
         // Get course codes of passed courses
         List<String> passedCourses = student.getTranscript().getPassedCourses()
@@ -52,5 +53,12 @@ public class CourseRegistrationSystem {
 
 
         return ACourses;
+    }
+
+    public static CourseRegistrationSystem getRegistrationSystem(){
+        if(instance==null){
+            instance=new CourseRegistrationSystem();
+        }
+        return instance;
     }
 }
