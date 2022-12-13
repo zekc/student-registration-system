@@ -17,7 +17,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
 
@@ -32,6 +31,7 @@ public class Main {
 
 
        File StudentsFile = new File("src/students");
+
        DeleteDirectory(StudentsFile);
         
 
@@ -84,17 +84,21 @@ System.out.println("Available Classes This Semester: \n");
         }
 
 
-        outputFileCreator( ThisSemesterCourses);
+    //    outputFileCreator( ThisSemesterCourses);
 
 
     }
 
     public static void DeleteDirectory(File dir) {
-        for (File file: dir.listFiles()) {
-            if (file.isDirectory())
-                DeleteDirectory(file);
-            file.delete();
-        }
+
+
+
+            for (File file : dir.listFiles()) {
+                if (file.isDirectory())
+                    DeleteDirectory(file);
+                file.delete();
+            }
+
     }
 
     private static ArrayList<Course> InitCourses(String fileName) throws IOException {

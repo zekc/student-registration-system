@@ -14,8 +14,8 @@ public ArrayList<Student> getStudents() {
 }
 
 public  E5Quota() {
-	students=new ArrayList<>();
-	
+
+	students = new ArrayList<Student>();
 }
 
 @Override

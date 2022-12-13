@@ -28,8 +28,12 @@ public class Course {
         this.courseType = courseType;
         this.sessions = sessions;
         courseSemesterName = semester;
+
+
+
         
-        setEvents();
+       // setEvents();
+        //Calismiyor bakman lazim
     }
     
     private void setEvents() {

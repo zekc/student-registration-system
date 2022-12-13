@@ -29,8 +29,10 @@ public class Main {
 
 
        File StudentsFile = new File("src/students");
+
+
        DeleteDirectory(StudentsFile);
-        
+
 
 
         ArrayList<Course> fullCourseList = InitCourses("src/lectures.json");

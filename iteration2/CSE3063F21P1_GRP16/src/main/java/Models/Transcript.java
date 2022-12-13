@@ -3,6 +3,7 @@ package Models;
 import Types.SemesterName;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Transcript {
 	private Double GPA;
@@ -49,6 +50,8 @@ public class Transcript {
 		return gpa_Map.get(course);
 	}
 
+	public double getGPA() {return 3.0;}
+
 	public void setGPA(Course course, Double gpa) {
         gpa_Map.put(course, gpa);
 	}
@@ -83,5 +86,8 @@ public class Transcript {
 
 	public void setSemester(Semester semester) {
 		this.semester = semester;
+	}
+
+	public void setGPA(Double genGrade) {
 	}
 }

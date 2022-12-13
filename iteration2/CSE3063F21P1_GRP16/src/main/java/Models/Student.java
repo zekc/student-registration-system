@@ -70,13 +70,13 @@ public class Student extends Person {
             Trans.put("gpa",transcript.getGPA());
             JSONArray passedCourses = new JSONArray();
 
-        for (int i = 0; i < transcript.passedCourses.size() ; i = i +1) {
-        passedCourses.put(transcript.passedCourses.get(i).getCourseCode());
+        for (int i = 0; i < transcript.getPassedCourses().size() ; i = i +1) {
+        passedCourses.put(transcript.getPassedCourses().get(i).getCourseCode());
         }
 
         JSONArray failedCourses = new JSONArray();
-        for (int i = 0; i < transcript.failedCourses.size() ; i = i +1) {
-           failedCourses.put(transcript.failedCourses.get(i).getCourseCode());
+        for (int i = 0; i < transcript.getFailedCourses().size() ; i = i +1) {
+           failedCourses.put(transcript.getFailedCourses().get(i).getCourseCode());
         }
 
         obj.put("PassedCourses",passedCourses);
