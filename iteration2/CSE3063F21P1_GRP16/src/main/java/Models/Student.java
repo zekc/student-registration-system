@@ -2,7 +2,9 @@ package Models;
 
 import Services.CourseRegistrationSystem;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,6 +17,7 @@ public class Student extends Person {
 
     private Transcript transcript;
     private ArrayList<Course> selectedCourses;
+    private ArrayList<Course> avaibleCourses;
     private Payment paymentAmount;
 
     private int StudentSemesterNo;
@@ -31,12 +34,24 @@ public class Student extends Person {
         LastName = newLastName;
         transcript = new Transcript(allCourses);
         selectedCourses = new ArrayList<>();
+        avaibleCourses = new ArrayList<>();
+        //studentAvaibleCourses();
 
     }
 
 
 
     CourseRegistrationSystem courseRegistrationSystem = new CourseRegistrationSystem();
+    
+   /* public void  studentAvaibleCourses() {
+    	
+    	for(int i=0;i<semesterCourses.length();i++) {
+    		if(trnskript.che) {}
+    		
+    	}
+    	
+    	
+    }*/
 
 
     public ArrayList<Course> enrollTheCourse(Student student ) {
@@ -60,7 +75,7 @@ public class Student extends Person {
         return selectedCourses;
     }
 
-    public void saveToJson(){
+    public void saveToJson() throws JSONException{
 
             JSONObject obj = new JSONObject();
             obj.put("Name", FirstName);
@@ -130,6 +145,8 @@ public class Student extends Person {
     public void SelectRandomCourses(ArrayList<Course> avaibleCourses)
     {
         selectedCourses.clear();
+        
+        
        int randomAmount = (int) Math.min(Math.max(5,avaibleCourses.size()*Math.random()),1);
         for (int i = 0; i < randomAmount; i = i + 1) {
 
