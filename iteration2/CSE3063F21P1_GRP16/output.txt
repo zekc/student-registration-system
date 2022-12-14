@@ -1,0 +1,244 @@
+**Atatürk İlkeleri ve İnkılap Tarihi II**
+Total Number of Student who successfully enrolled to the course: 1
+List Of Students:
+Micky Rankcom
+**Atatürk İlkeleri ve İnkılap Tarihi II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Computer Programming II**
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Computer Programming II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Computer Programming II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Computer Programming II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Computer Programming II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Computer Programming II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Calculus II**
+Total Number of Student who successfully enrolled to the course: 2
+List Of Students:
+Magnum Clewes
+Brendin Grigoriev
+**Calculus II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Calculus II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Calculus II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Calculus II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Calculus II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**
+Total Number of Student who successfully enrolled to the course: 2
+List Of Students:
+Karl Musson
+Micky Luchelli
+**Linear Algebra for Computer Engineering**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Physics II**
+Total Number of Student who successfully enrolled to the course: 2
+List Of Students:
+Hervey Mcettrick
+Tilly De Caroli
+**Physics II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Physics II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Physics II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Physics II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Physics II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Physics Lab II**
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Physics Lab II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Physics Lab II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Physics Lab II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Physics Lab II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Physics Lab II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Türk Dili II**
+Total Number of Student who successfully enrolled to the course: 2
+List Of Students:
+Linda Chicchelli
+Kaycee MacGahy
+**Türk Dili II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Türk Dili II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Türk Dili II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Türk Dili II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Türk Dili II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Analysis of Algorithms**
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Analysis of Algorithms**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Analysis of Algorithms**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Analysis of Algorithms**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Analysis of Algorithms**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Analysis of Algorithms**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Systems Programming**
+Total Number of Student who successfully enrolled to the course: 1
+List Of Students:
+Rebecca Frood
+**Systems Programming**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Systems Programming**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Systems Programming**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Systems Programming**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Systems Programming**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Electronics**
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Electronics**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Electronics**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Electronics**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Electronics**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Electronics**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Introduction to Probability and Statistics**
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Introduction to Probability and Statistics**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Introduction to Probability and Statistics**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Introduction to Probability and Statistics**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Introduction to Probability and Statistics**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Introduction to Probability and Statistics**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Engineering Project II**
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Engineering Project II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Engineering Project II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Engineering Project II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Engineering Project II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Engineering Project II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**
+Total Number of Student who taking the course again: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:

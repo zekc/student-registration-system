@@ -57,6 +57,10 @@ public class Transcript {
 		return this.GPA;
 	}
 
+	public double getGPA(Course course) { //get corresponding GPA for the course
+		return this.GPA;
+	}
+
 	public void setGPA(Course course, Double gpa) {
         gpa_Map.put(course, gpa);
 	}
@@ -91,5 +95,9 @@ public class Transcript {
 
 	public void setSemester(Semester semester) {
 		this.semester = semester;
+	}
+
+	public void setGPA(Double genGrade) {
+
 	}
 }
