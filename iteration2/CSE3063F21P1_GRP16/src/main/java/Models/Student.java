@@ -67,7 +67,7 @@ public class Student extends Person {
             obj.put("LastName", LastName);
 
             JSONObject Trans  = new JSONObject();
-            Trans.put("gpa",transcript.getGPA());
+        //    Trans.put("gpa",transcript.getGPA());
             JSONArray passedCourses = new JSONArray();
 
         for (int i = 0; i < transcript.getPassedCourses().size() ; i = i +1) {

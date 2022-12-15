@@ -58,7 +58,7 @@ public class Transcript {
 
 		for (int i = 0; i < courses.size(); i++) { //Loop at all the courses
 			Course course = courses.get(i);
-			totalGPA = totalGPA + (course.getCredits() * gpa_Map.get(course)); //Credit * GPA
+			totalGPA = totalGPA + (course.getCredits() ); //Credit * GPA
 			totalCredit = totalCredit + course.getCredits(); //Credit
 		}
 
