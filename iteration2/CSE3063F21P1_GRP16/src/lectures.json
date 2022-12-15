@@ -262,7 +262,7 @@
       "preRequisiteCourse": [],
       "courseSessions": [
         {
-          "quota": 70,
+          "quota": 10,
           "sessionHours": [
             {
               "day": 6,

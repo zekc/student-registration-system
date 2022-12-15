@@ -37,6 +37,13 @@ public class Student extends Person {
         return checkedSelectedCourses;
     }
 
+
+    public String enrollTheCourse() {
+        //this method sends student's selected courses to systems control
+        selectedCourses= courseRegistrationSystem.checkSelectedCourses(this,selectedCourses);
+        return sendToApprove(this,selectedCourses);
+    }
+
     public ArrayList<Course> sendToApprovement(Student student, ArrayList<Course> checkedSelectedCourses) {
         //student sends the checked courses by the registration system to his/her advisor and advisor returns modified list
       //  checkedSelectedCourses = advisor.courseApprovement(student, checkedSelectedCourses);

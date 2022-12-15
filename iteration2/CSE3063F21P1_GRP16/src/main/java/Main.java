@@ -50,7 +50,7 @@ public class Main {
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
 
        advisors = advisorCreator.GenerateRandomAdv(5);
-       students = generator.GenerateRandomStudents(10,fullCourseList);
+       students = generator.GenerateRandomStudents(400,fullCourseList);
 
 
         for (int i = 0; i < students.size(); i = i + 1) {
@@ -81,7 +81,8 @@ System.out.println("Available Classes This Semester: \n");
             System.out.println(students.get(i).FirstName + " " +  students.get(i).LastName +"is selecting course");
 
             students.get(i).SelectRandomCourses(ThisSemesterCourses);
-            System.out.println( students.get(i).sendToApprove(students.get(i),students.get(i).getSelectedCourses()));
+
+            System.out.println( students.get(i).enrollTheCourse());
 
         }
 
