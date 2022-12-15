@@ -45,10 +45,10 @@ public class Main {
 
         ArrayList<Advisor> advisors = new ArrayList<Advisor>();
         ArrayList<Student> students = new ArrayList<Student>();
-        ArrayList<Course> ThisSemesterCourses =     registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
+        ArrayList<Course> ThisSemesterCourses =     registrationSystem.GetAvaibleCourses(SemesterName.SPRING,fullCourseList);
 
        advisors = advisorCreator.GenerateRandomAdv(5);
-       students = generator.GenerateRandomStudents(10,fullCourseList);
+       students = generator.GenerateRandomStudents(800,fullCourseList);
 
 
         for (int i = 0; i < students.size(); i = i + 1) {
@@ -79,7 +79,8 @@ System.out.println("Available Classes This Semester: \n");
             System.out.println(students.get(i).FirstName + " " +  students.get(i).LastName +"is selecting course");
 
             students.get(i).SelectRandomCourses(ThisSemesterCourses);
-            System.out.println( students.get(i).sendToApprove(students.get(i),students.get(i).getSelectedCourses()));
+
+            System.out.println( students.get(i).enrollTheCourse());
 
         }
 
@@ -200,8 +201,9 @@ System.out.println("Available Classes This Semester: \n");
         	output=new PrintWriter(outputFile);
         	
         	for(int i=0;i<thisSemesterCourses.size();i++) {
+                output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**");
         		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
-        			output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**");
+
         			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
         		
         		}

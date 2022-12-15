@@ -18,21 +18,12 @@ public class CourseRegistrationSystem {
         ArrayList<Course> checkedCourses = new ArrayList<>();
 
         for (Course course : courses) {
-        	
+            String ss="Services.CourseRegisterationSystem: The course: " + course.getCourseCode() +" . "+ course.getQuotaCounter()+" "+course.getQuota();
+            System.out.println(ss);
         	if(course.getQuota()>course.getQuotaCounter()) {
-            // Check if the course has any prerequisite
-            if (course.getPrerequisiteCourse() != null) {
-                // Check if the student passed the prerequisite
-                if (passedCourses != null &&
-                        passedCourses.indexOf(course.getPrerequisiteCourse()) != -1) {
-                    checkedCourses.add(course);
-                } else {
-                	course.getCourseEvents().get(2).getStudents().add(student);//add student to course Event2
-                    System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to unmet prerequisities.");
-                }
-            } else {
                 checkedCourses.add(course);
-            }
+            // Check if the course has any prerequisite
+
         	}
         	else {
         		

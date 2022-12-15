@@ -29,7 +29,16 @@ public class Advisor extends Lecturer{
         
         for (int i = 0; i < waitingCourses.size(); i++) {
         	waitingCourses.get(i).getCourseEvents().get(0).getStudents().add(student);//successfully added student to i'th course
-        	waitingCourses.get(i).setQuota(waitingCourses.get(i).getQuotaCounter()+1);
+        	waitingCourses.get(i).setQuotaCounter(waitingCourses.get(i).getQuotaCounter()+1);
+
+
+           for(int j=0;j<student.getTranscript().getFailedCourses().size();j++){
+               if(waitingCourses.get(i).getCourseCode()==student.getTranscript().getFailedCourses().get(j).getCourseCode()){
+                   waitingCourses.get(i).getCourseEvents().get(1).getStudents().add(student);//student retake the course
+                   break;
+               }
+           }
+
         }
         
         if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, waitingCourses)){

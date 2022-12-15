@@ -42,22 +42,11 @@ public class Student extends Person {
 
 
     CourseRegistrationSystem courseRegistrationSystem = new CourseRegistrationSystem();
-    
-   /* public void  studentAvaibleCourses() {
-    	
-    	for(int i=0;i<semesterCourses.length();i++) {
-    		if(trnskript.che) {}
-    		
-    	}
-    	
-    	
-    }*/
 
-
-    public ArrayList<Course> enrollTheCourse(Student student ) {
+    public String enrollTheCourse() {
         //this method sends student's selected courses to systems control
-        ArrayList<Course> checkedSelectedCourses = courseRegistrationSystem.checkSelectedCourses(student,selectedCourses);
-        return checkedSelectedCourses;
+        selectedCourses= courseRegistrationSystem.checkSelectedCourses(this,selectedCourses);
+        return sendToApprove(this,selectedCourses);
     }
     public String sendToApprove (Student student, ArrayList<Course> checkedSelectedCourses){
         //student sends the checked courses by the registration system to his/her advisor
