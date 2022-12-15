@@ -31,6 +31,7 @@ public class Advisor extends Lecturer{
 
            for(int j=0;j<student.getTranscript().getFailedCourses().size();j++){
                if(waitingCourses.get(i).getCourseCode()==student.getTranscript().getFailedCourses().get(j).getCourseCode()){
+                   System.out.println("Advisor: The course: " + waitingCourses.get(i).getCourseCode() + " was taken again by the student");
                    waitingCourses.get(i).getCourseEvents().get(1).getStudents().add(student);//student retake the course
                    break;
                }
