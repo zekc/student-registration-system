@@ -9,7 +9,7 @@ import java.util.UUID;
 
 public class GenerateTranscript {
     private String ID;
-    public double GPA;
+    private double GPA;
 
     public String generateID() {
         this.ID = UUID.randomUUID().toString();
