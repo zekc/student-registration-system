@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Transcript {
-	private Double GPA;
 	private int credit;
 	private ArrayList<Course> passedCourses;
 	private ArrayList<Course> failedCourses;
@@ -46,14 +45,25 @@ public class Transcript {
 		return true;
 	}
 
-	public double getGPA(Course course) { //get corresponding GPA for the course
-		return gpa_Map.get(course);
-	}
+	private double getGPA() {
+		ArrayList<Course> courses = new ArrayList<Course>();
+		//Loop at failed and passed courses to collect them at one arraylist
+		courses.addAll(this.getFailedCourses());
+		courses.addAll(this.getPassedCourses());
 
-	public double getGPA() {return 3.0;}
 
-	public void setGPA(Course course, Double gpa) {
-        gpa_Map.put(course, gpa);
+		double totalGPA = 0.0;
+		double totalCredit = 0.0;
+		double resultGPA = 0.0;
+
+		for (int i = 0; i < courses.size(); i++) { //Loop at all the courses
+			Course course = courses.get(i);
+			totalGPA = totalGPA + (course.getCredits() * gpa_Map.get(course)); //Credit * GPA
+			totalCredit = totalCredit + course.getCredits(); //Credit
+		}
+
+		resultGPA = totalGPA / totalCredit;
+		return resultGPA;
 	}
 
 	public double getCredit(Course course) { //get corresponding Credit for the course
