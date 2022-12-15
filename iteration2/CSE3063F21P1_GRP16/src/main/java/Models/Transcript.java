@@ -45,7 +45,7 @@ public class Transcript {
 		return true;
 	}
 
-	private double getGPA() {
+	public double getGPA() {
 		ArrayList<Course> courses = new ArrayList<Course>();
 		//Loop at failed and passed courses to collect them at one arraylist
 		courses.addAll(this.getFailedCourses());
