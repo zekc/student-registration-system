@@ -11,17 +11,14 @@ public class Advisor extends Lecturer{
         // Removing disapproved courses from approvement list and adding reminding parts to the transcript through registration system
         ArrayList<Integer> disApprovedCourses = new ArrayList<Integer>();
         for (int i = 0; i < waitingCourses.size(); i++) {
-            if(student.getTranscript().getSemester()!=waitingCourses.get(i).getCourseSemesterName()){
-            	disApprovedCourses.add(i);	
-            	continue;
-            	              
-            }
-            
+
             if(waitingCourses.get(i).getRequieredCredits()>student.getTranscript().getCompletedCredits()) {
+
                 System.out.println("Advisor: The course: " + waitingCourses.get(i).getCourseCode() + " not added due to credits");
-        		waitingCourses.get(i).getCourseEvents().get(4).getStudents().add(student);//student doesnt have needed number of credits
-        		disApprovedCourses.add(i);
-        	}  
+                waitingCourses.get(i).getCourseEvents().get(4).getStudents().add(student);//student doesnt have needed number of credits
+                disApprovedCourses.add(i);
+            }
+
         }
         for (int i = 0; i < disApprovedCourses.size(); i++) {
             waitingCourses.remove(disApprovedCourses.get(i));

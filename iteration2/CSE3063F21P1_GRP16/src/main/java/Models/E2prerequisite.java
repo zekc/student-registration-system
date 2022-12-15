@@ -20,7 +20,7 @@ public  E2prerequisite() {
 @Override
 public String toString() {
 		
-	String s="Total Number of Student who could't take the course becuase of prerequisites: "+students.size()+"\nList Of Students:\n";
+	String s="Total Number of Student who couldn't take the course because of prerequisites: "+students.size()+"\nList Of Students:\n";
 	
 	for(int i=0;i<students.size();i++) {
 		s+=students.get(i).getFirstName()+" "+students.get(i).getLastName()+"\n";
