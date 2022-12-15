@@ -86,7 +86,8 @@ public class JsonService {
             }
 
             //  Course _course = new Course(courseName, credit, preRequisites, courseSessions, requiredCredits, courseSemester);  // CourseType will be dynamic.
-            Course _course = new Course(courseName,courseCode,quota,prereq,credit,courseSemester,courseType,courseSessions);
+            //Course _course = new Course(courseName,courseCode,quota,prereq,credit,courseSemester,courseType,courseSessions);
+            Course _course = new Course(courseName,courseCode,quota,prereq,credit,courseSemester,courseType,courseSessions,requiredCredits);
             courseList.add(_course);
         }
 
