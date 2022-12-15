@@ -8,6 +8,7 @@ import java.util.HashMap;
 public class Transcript {
 	private Double GPA;
 	private int credit;
+	private int completedCredits;
 	private ArrayList<Course> passedCourses;
 	private ArrayList<Course> failedCourses;
 	private Semester semester;
@@ -38,6 +39,7 @@ public class Transcript {
 			} 
 			else {
 				passedCourses.add(Courses.get(i));
+				this.completedCredits+=Courses.get(i).getCredits();
 			}
 		}
 	}
@@ -89,5 +91,12 @@ public class Transcript {
 	}
 
 	public void setGPA(Double genGrade) {
+
 	}
+
+
+	public int getCompletedCredits() {
+		return completedCredits;
+	}
+
 }

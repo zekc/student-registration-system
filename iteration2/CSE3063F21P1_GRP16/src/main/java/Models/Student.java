@@ -39,9 +39,13 @@ public class Student extends Person {
 
     public ArrayList<Course> sendToApprovement(Student student, ArrayList<Course> checkedSelectedCourses) {
         //student sends the checked courses by the registration system to his/her advisor and advisor returns modified list
-        checkedSelectedCourses = advisor.courseApprovement(student, checkedSelectedCourses);
+      //  checkedSelectedCourses = advisor.courseApprovement(student, checkedSelectedCourses);
+
+        // disabled For now
         return checkedSelectedCourses;
     }
+
+
 
     public String sendToApprove(Student student, ArrayList<Course> courses) {
         //Sends to registration system for adding modified list to transcript
