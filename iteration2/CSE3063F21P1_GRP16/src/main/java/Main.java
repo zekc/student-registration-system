@@ -51,7 +51,7 @@ public class Main {
 
 
         ArrayList<Student> students = new ArrayList<Student>();
-        ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
+        ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.SPRING,fullCourseList);
 
        advisors = advisorCreator.GenerateRandomAdv(5);
        students = generator.GenerateRandomStudents(400,fullCourseList);
@@ -91,7 +91,7 @@ System.out.println("Available Classes This Semester: \n");
         }
 
 
-    //    outputFileCreator( ThisSemesterCourses);
+        outputFileCreator( ThisSemesterCourses);
 
 
     }
@@ -108,51 +108,33 @@ System.out.println("Available Classes This Semester: \n");
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
     private static void outputFileCreator( ArrayList<Course> thisSemesterCourses){
 
-    	PrintWriter output=null;
+        PrintWriter output=null;
         try {
-            
+
             File outputFile = new File("output.txt");
-        	output=new PrintWriter(outputFile);
-        	
-        	for(int i=0;i<thisSemesterCourses.size();i++) {
-        		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
-        			output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**");
-        			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
-        		
-        		}
-        		}
-        		
-        
-          }
-          catch(FileNotFoundException e)
-          {
-              e.printStackTrace();
-          }
-          finally {
+            output=new PrintWriter(outputFile);
+
+            for(int i=0;i<thisSemesterCourses.size();i++) {
+                output.println("<<"+thisSemesterCourses.get(i).getCourseName()+">>");
+                for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
+
+                    output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
+
+                }
+            }
+
+
+        }
+        catch(FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        finally {
             if (output != null)output.close();
-          }
-    	
-
-
-
-
-
+        }
     }
-
-
 
 
 }

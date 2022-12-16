@@ -19,13 +19,17 @@ public  E0Success() {
 
 @Override
 public String toString() {
-		
-	String s="Total Number of Student who successfully enrolled to the course: "+students.size()+"\nList Of Students:\n";
-	
+
+	String s="    Total Number of Student who successfully enrolled to the course: "+students.size();
+	if(students.size()>0)
+		s+="\n     -List Of Students:\n";
+	else
+		s+="\n";
+
 	for(int i=0;i<students.size();i++) {
-		s+=students.get(i).getFirstName()+" "+students.get(i).getLastName()+"\n";
-		
-		
+		s+="      *"+students.get(i).getFirstName()+" "+students.get(i).getLastName()+"\n";
+
+
 	}
 	return s;
 }
