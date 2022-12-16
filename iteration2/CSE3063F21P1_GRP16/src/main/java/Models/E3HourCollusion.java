@@ -20,18 +20,12 @@ public  E3HourCollusion() {
 
 @Override
 public String toString() {
-
-<<<<<<< HEAD
 	String s="    Total Number of Student who couldn't take the course because of Hour Collusion: "+students.size();
 	if(students.size()>0)
 		s+="\n     -List Of Students:\n";
 	else
 		s+="\n";
 
-=======
-	String s="Total Number of Student who could't take the course becuase Hour Collusion: "+students.size()+"\nList Of Students:\n";
-	
->>>>>>> 9e57320211a282bb55889f483fd932b37ee1302e
 	for(int i=0;i<students.size();i++) {
 		s+="      *"+students.get(i).getFirstName()+" "+students.get(i).getLastName()+"\n";
 
