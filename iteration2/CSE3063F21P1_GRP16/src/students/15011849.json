@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"TranskriptObj":{"gpa":3},"FailedCourses":[],"PassedCourses":[],"LastName":"Late","Name":"Lucias"}
+=======
+{"TranskriptObj":{"gpa":3},"FailedCourses":["CSE1200"],"PassedCourses":["ATA121","MBG1201","CSE1241"],"LastName":"Gulliman","Name":"Russ"}
+>>>>>>> 9e57320211a282bb55889f483fd932b37ee1302e
