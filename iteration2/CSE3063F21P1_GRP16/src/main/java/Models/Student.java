@@ -41,7 +41,7 @@ public class Student extends Person {
     public String enrollTheCourse() {
         //this method sends student's selected courses to systems control
         selectedCourses= courseRegistrationSystem.checkSelectedCourses(this,selectedCourses);
-        return sendToApprove(this,selectedCourses);
+        return sendToApprove(selectedCourses);
     }
 
     public ArrayList<Course> sendToApprovement(Student student, ArrayList<Course> checkedSelectedCourses) {
@@ -54,9 +54,9 @@ public class Student extends Person {
 
 
 
-    public String sendToApprove(Student student, ArrayList<Course> courses) {
+    public String sendToApprove(ArrayList<Course> courses) {
         //Sends to registration system for adding modified list to transcript
-        return advisor.addingCheckedCourses(student, courses);
+        return advisor.courseApprovement(this, courses);
     }
 
     public ArrayList<Course> selectTheCourse(ArrayList<Course> courses) {

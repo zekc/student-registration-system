@@ -48,6 +48,7 @@ public class Advisor extends Lecturer{
         }
 
     }
+    //bu method'a gerek yok
     public String addingCheckedCourses(Student student , ArrayList<Course> courses){
         // Method sends checked courses to registration system
         if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, courses)){
