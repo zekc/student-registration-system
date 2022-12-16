@@ -59,7 +59,7 @@
       "preRequisiteCourse": [],
       "courseSessions": [
         {
-          "quota": 70,
+          "quota": 20,
           "sessionHours": [
             {
               "day": 2,

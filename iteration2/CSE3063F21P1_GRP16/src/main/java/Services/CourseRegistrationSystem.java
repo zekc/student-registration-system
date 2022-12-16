@@ -24,6 +24,7 @@ public class CourseRegistrationSystem {
                     checkedCourses.add(course);
                     // Check if the course has any prerequisite
 
+<<<<<<< HEAD
                 } else {
 
                     course.getCourseEvents().get(5).getStudents().add(student);//add student to course Event2
@@ -31,12 +32,25 @@ public class CourseRegistrationSystem {
                 }
             }
             else{
+=======
+            if(checkPrereq( passedCourses,course.getPrerequisiteCourse())) {
+                if (course.getQuota() > course.getQuotaCounter()) {
+                    checkedCourses.add(course);
+                    // Check if the course has any prerequisite
+
+                } else {
+
+                    course.getCourseEvents().get(5).getStudents().add(student);//add student to course Event2
+                    System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to quota");
+                }
+            }else{
+
+>>>>>>> 9e57320211a282bb55889f483fd932b37ee1302e
                 course.getCourseEvents().get(2).getStudents().add(student);//add student to course Event2
                 System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to prerequisite");
 
             }
         }
-
         return checkedCourses;
     }
 
@@ -57,6 +71,23 @@ public class CourseRegistrationSystem {
 
     public boolean addApprovedCoursesToTranscript(Student student, ArrayList<Course> courses){
         return student.getTranscript().addCourses(student, courses);
+    }
+
+    private boolean checkPrereq(List<String> arr,String prerequisiteCourse) {
+
+        // msaid yazdi
+        if(!prerequisiteCourse.equals("non")) {
+            for (int i = 0; i < arr.size(); i++) {
+                if (arr.get(i).equals(prerequisiteCourse)) {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+        else{
+            return true;
+        }
     }
 
 

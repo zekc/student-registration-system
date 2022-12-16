@@ -53,8 +53,8 @@ public class Main {
         ArrayList<Student> students = new ArrayList<Student>();
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.SPRING,fullCourseList);
 
-       advisors = advisorCreator.GenerateRandomAdv(5);
-       students = generator.GenerateRandomStudents(400,fullCourseList);
+
+       students = generator.GenerateRandomStudents(700,fullCourseList);
 
 
         for (int i = 0; i < students.size(); i = i + 1) {
@@ -65,6 +65,8 @@ public class Main {
         students.get(i).saveToJson();
 
         }
+
+
 
 
         System.out.println(" ");
@@ -89,6 +91,7 @@ System.out.println("Available Classes This Semester: \n");
             System.out.println( students.get(i).enrollTheCourse());
 
         }
+        outputFileCreator( ThisSemesterCourses);
 
 
         outputFileCreator( ThisSemesterCourses);
@@ -114,6 +117,7 @@ System.out.println("Available Classes This Semester: \n");
         try {
 
             File outputFile = new File("output.txt");
+<<<<<<< HEAD
             output=new PrintWriter(outputFile);
 
             for(int i=0;i<thisSemesterCourses.size();i++) {
@@ -132,6 +136,25 @@ System.out.println("Available Classes This Semester: \n");
             e.printStackTrace();
         }
         finally {
+=======
+        	output=new PrintWriter(outputFile);
+        	
+        	for(int i=0;i<thisSemesterCourses.size();i++) {
+        		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
+                    output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**"+(thisSemesterCourses.get(i).getPrerequisiteCourse().equals("non")?"0":1));
+        			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
+        		
+        		}
+        		}
+        		
+        
+          }
+          catch(FileNotFoundException e)
+          {
+              e.printStackTrace();
+          }
+          finally {
+>>>>>>> 9e57320211a282bb55889f483fd932b37ee1302e
             if (output != null)output.close();
         }
     }
