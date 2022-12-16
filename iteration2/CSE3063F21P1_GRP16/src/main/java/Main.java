@@ -53,8 +53,8 @@ public class Main {
         ArrayList<Student> students = new ArrayList<Student>();
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
 
-       advisors = advisorCreator.GenerateRandomAdv(5);
-       students = generator.GenerateRandomStudents(400,fullCourseList);
+
+       students = generator.GenerateRandomStudents(700,fullCourseList);
 
 
         for (int i = 0; i < students.size(); i = i + 1) {
@@ -65,6 +65,8 @@ public class Main {
         students.get(i).saveToJson();
 
         }
+
+
 
 
         System.out.println(" ");
@@ -89,6 +91,7 @@ System.out.println("Available Classes This Semester: \n");
             System.out.println( students.get(i).enrollTheCourse());
 
         }
+        outputFileCreator( ThisSemesterCourses);
 
 
     //    outputFileCreator( ThisSemesterCourses);
@@ -129,7 +132,7 @@ System.out.println("Available Classes This Semester: \n");
         	
         	for(int i=0;i<thisSemesterCourses.size();i++) {
         		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
-        			output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**");
+                    output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**"+(thisSemesterCourses.get(i).getPrerequisiteCourse().equals("non")?"0":1));
         			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
         		
         		}

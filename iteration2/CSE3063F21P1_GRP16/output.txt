@@ -1,0 +1,234 @@
+**Atatürk İlkeleri ve İnkılap Tarihi II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Atatürk İlkeleri ve İnkılap Tarihi II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Computer Programming II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Computer Programming II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Computer Programming II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Computer Programming II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Computer Programming II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Computer Programming II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Calculus II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Calculus II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Calculus II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Calculus II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Calculus II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Calculus II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Linear Algebra for Computer Engineering**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Physics II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Physics II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Physics II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Physics II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Physics II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Physics II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Physics Lab II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Physics Lab II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Physics Lab II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Physics Lab II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Physics Lab II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Physics Lab II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Türk Dili II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Türk Dili II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Türk Dili II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Türk Dili II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Türk Dili II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Türk Dili II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Analysis of Algorithms**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Analysis of Algorithms**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Analysis of Algorithms**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Analysis of Algorithms**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Analysis of Algorithms**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Analysis of Algorithms**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Systems Programming**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Systems Programming**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Systems Programming**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Systems Programming**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Systems Programming**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Systems Programming**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Electronics**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Electronics**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Electronics**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Electronics**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Electronics**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Electronics**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Introduction to Probability and Statistics**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Introduction to Probability and Statistics**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Introduction to Probability and Statistics**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Introduction to Probability and Statistics**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Introduction to Probability and Statistics**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Introduction to Probability and Statistics**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**Engineering Project II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**Engineering Project II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**Engineering Project II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**Engineering Project II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**Engineering Project II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**Engineering Project II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**0
+Total Number of Student who successfully enrolled to the course: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**0
+Total Number of Student who taking the course again: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**0
+Total Number of Student who could't take the course becuase of prerequisites: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**0
+Total Number of Student who could't take the course becuase Hour Collusion: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**0
+Total Number of Student who could't take the course becuase of they don't have enough credits: 0
+List Of Students:
+**İş Sağlığı ve Güvenliği II**0
+Total Number of Student who could't take the course becuase the is quota full: 0
+List Of Students:
