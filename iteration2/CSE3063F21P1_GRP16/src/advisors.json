@@ -1,0 +1,62 @@
+{
+  "advisors": [
+    {
+      "AdvisorName": "Prof. Dr. Haluk Rahmi ",
+      "AdvisorLastName":"TOPÇUOĞLU"
+
+    },
+    {
+      "AdvisorName": "Prof. Dr. Çiğdem Eroğlu ",
+      "AdvisorLastName":" ERDEM"
+    },
+    {
+      "AdvisorName": "Prof. Prof. Ali Fuat ",
+      "AdvisorLastName":"ALKAYA "
+      
+    },
+    {
+      "AdvisorName": "Assoc. Prof. Murat Can  ",
+      "AdvisorLastName":"GANİZ "
+    },
+    {
+      "AdvisorName": "Assoc. Prof. Müjdat ",
+      "AdvisorLastName":"SOYTÜRK "
+      
+    },
+    {
+      "AdvisorName": "Assoc. Prof. Borahan  ",
+      "AdvisorLastName":"TÜMER "
+    },
+    {
+      "AdvisorName": "Assoc. Prof. Mustafa",
+      "AdvisorLastName":"AĞAOĞLU "
+      
+    },
+    {
+      "AdvisorName": "Asst. Prof. Mehmet ",
+      "AdvisorLastName":"BARAN"
+    },
+    {
+      "AdvisorName": "Asst. Prof. Betül Demiröz ",
+      "AdvisorLastName":"BOZ"
+    },
+    {
+      "AdvisorName": "Asst. Prof. Fatma Corut ",
+      "AdvisorLastName":"Ergin"
+      
+    },
+    {
+      "AdvisorName": "Asst. Prof. Ali Haydar ",
+      "AdvisorLastName":"ÖZER"
+    },
+    {
+      "AdvisorName": "Asst. Prof. Sanem",
+      "AdvisorLastName":"Arslan"
+      
+    }
+
+    
+
+
+  ]
+}

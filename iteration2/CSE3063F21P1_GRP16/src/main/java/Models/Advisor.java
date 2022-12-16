@@ -60,7 +60,10 @@ public class Advisor extends Lecturer{
     private ArrayList<Student> StudentList;
 
     public Advisor(String newName, String newLastName) {
-        super();
+        FirstName = newName;
+        LastName = newLastName;
+
+
     }
 
     public ArrayList<Student> getStudentList() {

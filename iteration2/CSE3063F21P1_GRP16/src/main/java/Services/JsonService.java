@@ -1,5 +1,6 @@
 package Services;
 
+import Models.Advisor;
 import Models.Course;
 import Models.CourseSession;
 import Models.Semester;
@@ -17,18 +18,11 @@ import java.util.ArrayList;
 public class JsonService {
 
 
-
     public static ArrayList<Course> InitCourses(String fileName) throws IOException {
-
-
-
 
 
         String jsonString = new String(Files.readAllBytes(Paths.get(fileName)), StandardCharsets.UTF_8);
         JSONObject obj = new JSONObject(jsonString);
-
-
-
 
 
         JSONArray courseJsonArray = obj.getJSONArray("courses");
@@ -48,7 +42,7 @@ public class JsonService {
 
 
             SemesterName sem = SemesterName.SPRING;
-            if(course.getInt("courseSemester") % 2 == 0){
+            if (course.getInt("courseSemester") % 2 == 0) {
 
                 sem = SemesterName.FALL;
             }
@@ -67,7 +61,6 @@ public class JsonService {
             JSONArray courseSessionsJSONObjects = new JSONArray(course.getJSONArray("courseSessions"));
 
 
-
             ArrayList<CourseSession> courseSessions = new ArrayList<>();
 
             for (int i = 0; i < courseSessionsJSONObjects.length(); i++) {
@@ -80,25 +73,53 @@ public class JsonService {
 
             String prereq = "non";
 
-            if(preRequisites.size() > 0){
+            if (preRequisites.size() > 0) {
 
                 prereq = preRequisites.get(0);
             }
 
             //  Course _course = new Course(courseName, credit, preRequisites, courseSessions, requiredCredits, courseSemester);  // CourseType will be dynamic.
             //Course _course = new Course(courseName,courseCode,quota,prereq,credit,courseSemester,courseType,courseSessions);
-            Course _course = new Course(courseName,courseCode,quota,prereq,credit,courseSemester,courseType,courseSessions,requiredCredits);
+            Course _course = new Course(courseName, courseCode, quota, prereq, credit, courseSemester, courseType, courseSessions, requiredCredits);
             courseList.add(_course);
         }
-
 
 
         return courseList;
 
 
-
     }
 
+    public ArrayList<Advisor> InitAdvisors(String s) throws IOException {
 
+
+        String jsonString = new String(Files.readAllBytes(Paths.get(s)), StandardCharsets.UTF_8);
+        JSONObject obj = new JSONObject(jsonString);
+
+
+        JSONArray AdJsonArray = obj.getJSONArray("advisors");
+        ArrayList<JSONObject> advisorJSON = new ArrayList<>();
+        for (int i = 0; i < AdJsonArray.length(); i++) {
+            advisorJSON.add((JSONObject) (AdJsonArray.get(i)));
+        }
+
+
+        ArrayList<Advisor> advisorList = new ArrayList<>();
+        for (JSONObject AD :  advisorJSON) {
+            String Name = AD.getString("AdvisorName");
+            String LName = AD.getString("AdvisorLastName");
+
+
+           Advisor _advisor = new Advisor(Name,LName);
+           advisorList.add(_advisor);
+
+        }
+
+
+
+
+
+        return advisorList;
+    }
 
 }

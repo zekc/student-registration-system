@@ -36,16 +36,20 @@ public class Main {
        DeleteDirectory(StudentsFile);
 
         JsonService jsonService = new JsonService();
-        
 
+        ArrayList<Advisor> advisors = new ArrayList<Advisor>();
 
         ArrayList<Course> fullCourseList = jsonService.InitCourses("src/lectures.json");
+        advisors = jsonService.InitAdvisors("src/advisors.json");
+
+        
+
         RandomStudentGenerator generator = new RandomStudentGenerator();
         RandomAdvisorCreator advisorCreator = new RandomAdvisorCreator();
         registrationSystem = CourseRegistrationSystem.getRegistrationSystem();
 
 
-        ArrayList<Advisor> advisors = new ArrayList<Advisor>();
+
         ArrayList<Student> students = new ArrayList<Student>();
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.FALL,fullCourseList);
 
