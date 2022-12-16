@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"TranskriptObj":{"gpa":3},"FailedCourses":["CSE1241"],"PassedCourses":["ATA121","MBG1201","CSE1200","MATH1001","PHYS1101","PHYS1103","TRD121"],"LastName":"Wodeland","Name":"Tedra"}
-=======
-{"TranskriptObj":{"gpa":3},"FailedCourses":["ATA121"],"PassedCourses":[],"LastName":"Boome","Name":"Antony"}
->>>>>>> 9e57320211a282bb55889f483fd932b37ee1302e
+{"TranskriptObj":{"gpa":3},"FailedCourses":["MBG1201"],"PassedCourses":["ATA121"],"LastName":"Muckeen","Name":"Mathian"}

@@ -112,12 +112,10 @@ System.out.println("Available Classes This Semester: \n");
     }
 
     private static void outputFileCreator( ArrayList<Course> thisSemesterCourses){
-
         PrintWriter output=null;
         try {
 
             File outputFile = new File("output.txt");
-<<<<<<< HEAD
             output=new PrintWriter(outputFile);
 
             for(int i=0;i<thisSemesterCourses.size();i++) {
@@ -136,28 +134,11 @@ System.out.println("Available Classes This Semester: \n");
             e.printStackTrace();
         }
         finally {
-=======
-        	output=new PrintWriter(outputFile);
-        	
-        	for(int i=0;i<thisSemesterCourses.size();i++) {
-        		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
-                    output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**"+(thisSemesterCourses.get(i).getPrerequisiteCourse().equals("non")?"0":1));
-        			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
-        		
-        		}
-        		}
-        		
-        
-          }
-          catch(FileNotFoundException e)
-          {
-              e.printStackTrace();
-          }
-          finally {
->>>>>>> 9e57320211a282bb55889f483fd932b37ee1302e
             if (output != null)output.close();
         }
+
     }
+
 
 
 }
