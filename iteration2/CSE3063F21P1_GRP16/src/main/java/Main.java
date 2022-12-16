@@ -201,7 +201,7 @@ System.out.println("Available Classes This Semester: \n");
         	output=new PrintWriter(outputFile);
         	
         	for(int i=0;i<thisSemesterCourses.size();i++) {
-                output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**");
+                output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**"+(thisSemesterCourses.get(i).getPrerequisiteCourse().equals("non")?"0":1));
         		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
 
         			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());

@@ -18,21 +18,42 @@ public class CourseRegistrationSystem {
         ArrayList<Course> checkedCourses = new ArrayList<>();
 
         for (Course course : courses) {
+            if(checkPrereq( passedCourses,course.getPrerequisiteCourse())) {
+                if (course.getQuota() > course.getQuotaCounter()) {
+                    checkedCourses.add(course);
+                    // Check if the course has any prerequisite
 
-        	if(course.getQuota()>course.getQuotaCounter()) {
-                checkedCourses.add(course);
-            // Check if the course has any prerequisite
+                } else {
 
-        	}
-        	else {
-        		
-        		course.getCourseEvents().get(5).getStudents().add(student);//add student to course Event2
-                System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to quota");
-        	}
+                    course.getCourseEvents().get(5).getStudents().add(student);//add student to course Event2
+                    System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to quota");
+                }
+            }
+            else{
+                course.getCourseEvents().get(2).getStudents().add(student);//add student to course Event2
+                System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to prerequisite");
+
+            }
         }
 
         return checkedCourses;
     }
+
+    private boolean checkPrereq(List<String> arr,String prerequisiteCourse) {
+        if(!prerequisiteCourse.equals("non")) {
+            for (int i = 0; i < arr.size(); i++) {
+                if (arr.get(i).equals(prerequisiteCourse)) {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+        else{
+            return true;
+        }
+    }
+
     public boolean addApprovedCoursesToTranscript(Student student, ArrayList<Course> courses){
         return student.getTranscript().addCourses(student, courses);
     }
