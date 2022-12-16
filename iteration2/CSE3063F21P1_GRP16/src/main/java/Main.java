@@ -50,7 +50,7 @@ public class Main {
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.SPRING,fullCourseList);
 
        advisors = advisorCreator.GenerateRandomAdv(5);
-       students = generator.GenerateRandomStudents(400,fullCourseList);
+       students = generator.GenerateRandomStudents(700,fullCourseList);
 
 
         for (int i = 0; i < students.size(); i = i + 1) {
@@ -124,7 +124,7 @@ System.out.println("Available Classes This Semester: \n");
         	output=new PrintWriter(outputFile);
         	
         	for(int i=0;i<thisSemesterCourses.size();i++) {
-                output.println("**"+thisSemesterCourses.get(i).getCourseName()+"**");
+                output.println("<<"+thisSemesterCourses.get(i).getCourseName()+">>");
         		for(int j=0;j<thisSemesterCourses.get(i).getCourseEvents().size();j++) {
 
         			output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
