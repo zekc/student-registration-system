@@ -13,8 +13,7 @@ public class CourseRegistrationSystem {
     public ArrayList<Course> checkSelectedCourses(Student student, ArrayList<Course> courses) {
         // Get course codes of passed courses
         List<String> passedCourses = student.getTranscript().getPassedCourses()
-                .stream().map(c -> c.getCourseCode())
-                .collect(Collectors.toList());
+                .stream().map(c -> c.getCourseCode()).toList();
 
         ArrayList<Course> checkedCourses = new ArrayList<>();
 
@@ -28,18 +27,22 @@ public class CourseRegistrationSystem {
             else {
 
                 course.getCourseEvents().get(5).getStudents().add(student);//add student to course Event2
-                System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to quota");
+                System.out.println("Services.CourseRegistrationSystem: The course: " + course.getCourseCode() + " not added due to quota");
             }
         }
 
         return checkedCourses;
     }
-    public boolean addApprovedCoursesToTranscript(Student student, ArrayList<Course> courses){
-        return student.getTranscript().addCourses(student, courses);
+
+    public boolean addApprovedCoursesToTranscript(Student student, ArrayList<Course> courses) {
+        try {
+            return student.getTranscript().addCourses(student, courses);
+        } catch (Exception e) {
+            return false;
+        }
     }
 
-
-    public  ArrayList<Course> GetAvaibleCourses(SemesterName semester, ArrayList<Course> allCourses) {
+    public  ArrayList<Course> GetAvailableCourses(SemesterName semester, ArrayList<Course> allCourses) {
         ArrayList<Course> ACourses = new ArrayList<Course>();
 
         for (int i = 0; i < allCourses.size(); i = i + 1) {

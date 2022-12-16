@@ -1,1 +1,47 @@
-{"TranskriptObj":{"gpa":3},"FailedCourses":["MATH1001"],"PassedCourses":["ATA121","MBG1201","CSE1200","CSE1241"],"LastName":"Scurman","Name":"Kelli"}
+{
+    "TranskriptObj": {"gpa": 1.8415624699314328},
+    "FailedCourses": [
+        "ISG122",
+        "CSE2023",
+        "IE3081",
+        "PHYS1101",
+        "CSE4297",
+        "CSE4000",
+        "ATA122",
+        "CSE4288",
+        "STAT2253"
+    ],
+    "PassedCourses": [
+        "TRD121",
+        "CSE3215",
+        "PHYS1104",
+        "CSE2246",
+        "TRD122",
+        "PHYS1102",
+        "PHYS1103",
+        "CSE3033",
+        "CSE3055",
+        "ECON2004",
+        "EE2031",
+        "CSE2225",
+        "EE2032",
+        "CSE4074",
+        "CSE3063",
+        "MBG1201",
+        "ATA121",
+        "CSE1200",
+        "MATH2055",
+        "CSE1242",
+        "CSE1241",
+        "CSE3000",
+        "ISG121",
+        "CSE4298",
+        "MATH1001",
+        "MATH1002",
+        "MATH2256",
+        "CSE2138",
+        "MATH2059"
+    ],
+    "LastName": "Campsall",
+    "Name": "Hollis"
+}

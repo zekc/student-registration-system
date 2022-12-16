@@ -1,102 +1,91 @@
 package Models;
 
-import Types.SemesterName;
+//import Services.CalculateGpa;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
+
+// TODO: create only necessary methods
 public class Transcript {
-	private Double GPA;
-	private int credit;
-	private int completedCredits;
-	private ArrayList<Course> passedCourses;
-	private ArrayList<Course> failedCourses;
-	private Semester semester;
+    private final Student student;
+    private final Set<StudentCourseScore> scores;
+    private double gpa;
 
-	HashMap<Course, Double>
-		gpa_Map = new HashMap<Course, Double>();
-		
-	HashMap<Course, Integer>
-	credit_Map = new HashMap<Course, Integer>();
+    public Transcript(Student student, List<Course> courses) {
+        this.student = student;
+        this.scores = courses.stream()
+                .map(course -> new StudentCourseScore(student, course, ThreadLocalRandom.current().nextDouble(4.0)))
+                .collect(Collectors.toSet());
+        this.calculateGPA();
+    }
 
-	public Transcript(ArrayList<Course> Courses) {
+    public Student getStudent() {
+        return student;
+    }
 
-		if (Math.random() * 2 == 0) {
-			semester = new Semester(4, SemesterName.FALL);
-		} 
-		else {
-			semester = new Semester(4, SemesterName.SPRING);
+    public Set<StudentCourseScore> getScores() {
+        return scores;
+    }
+
+    private void calculateGPA() {
+        if (scores.isEmpty()) {
+            this.gpa = 0.0;
+            return;
+        }
+
+        double scoresDotCredits = scores.stream()
+                .map(score -> score.pointScore() * score.course().getCredits())
+                .mapToDouble(Double::doubleValue)
+                .sum();
+
+        double credits = scores.stream()
+                .map(score -> score.course().getCredits())
+                .mapToDouble(Integer::doubleValue)
+                .sum();
+
+        this.gpa = credits != 0 ? scoresDotCredits / credits : 0.0;
+    }
+
+    public double getGPA() {
+        return gpa;
+    }
+
+    public List<Course> getPassedCourses() {
+        return scores.stream()
+                .filter(score -> score.pointScore() >= 1.0)
+                .map(StudentCourseScore::course)
+                .toList();
+    }
+
+    public List<Course> getFailedCourses() {
+        return scores.stream()
+                .filter(score -> score.pointScore() < 1.0)
+                .map(StudentCourseScore::course)
+                .toList();
+    }
+
+    public int getCompletedCredits() {
+        return scores.stream()
+                .map(scores -> scores.course().getCredits())
+                .mapToInt(Integer::intValue)
+                .sum();
+    }
+
+    public boolean addCourses(Student student, List<Course> courses) throws Exception {
+		if (this.student == student) {
+			Set<StudentCourseScore> newScores = courses.stream()
+					.map(course -> new StudentCourseScore(student, course, 0.0))
+					.collect(Collectors.toSet());
+
+            this.calculateGPA();
+
+            return scores.addAll(newScores);
 		}
 
-		passedCourses = new ArrayList<Course>();
-		failedCourses = new ArrayList<Course>();
-
-		int PassedAmount = (int) (Math.random() * 15);
-		int RandomFailed = (int) (Math.random() * PassedAmount);
-		for (int i = 0; i < PassedAmount; i = i + 1) {
-			if (i == RandomFailed) {
-				failedCourses.add(Courses.get(i));
-			} 
-			else {
-				passedCourses.add(Courses.get(i));
-				this.completedCredits+=Courses.get(i).getCredits();
-			}
-		}
-	}
-
-	public boolean addCourses(Student student, ArrayList<Course> courses) {
-		return true;
-	}
-
-	public double getGPA(Course course) { //get corresponding GPA for the course
-		return gpa_Map.get(course);
-	}
-
-	public double getGPA() {return 3.0;}
-
-	public void setGPA(Course course, Double gpa) {
-        gpa_Map.put(course, gpa);
-	}
-
-	public double getCredit(Course course) { //get corresponding Credit for the course
-		return credit_Map.get(course);
-	}
-
-	public void setCredit(Course course, int credit) {
-        credit_Map.put(course, credit);
-	}
-
-	public ArrayList<Course> getPassedCourses() {
-		return passedCourses;
-	}
-
-	public void setPassedCourses(ArrayList<Course> passedCourses) {
-		this.passedCourses = passedCourses;
-	}
-
-	public ArrayList<Course> getFailedCourses() {
-		return failedCourses;
-	}
-
-	public void setFailedCourses(ArrayList<Course> failedCourses) {
-		this.failedCourses = failedCourses;
-	}
-
-	public Semester getSemester() {
-		return semester;
-	}
-
-	public void setSemester(Semester semester) {
-		this.semester = semester;
-	}
-
-	public void setGPA(Double genGrade) {
-
-	}
-
-
-	public int getCompletedCredits() {
-		return completedCredits;
-	}
-
+		return false;
+    }
 }

@@ -1,1 +1,47 @@
-{"TranskriptObj":{"gpa":3},"FailedCourses":["ATA121"],"PassedCourses":["MBG1201"],"LastName":"Gulliman","Name":"Charmane"}
+{
+    "TranskriptObj": {"gpa": 1.988916296712945},
+    "FailedCourses": [
+        "PHYS1104",
+        "PHYS1102",
+        "CSE2023",
+        "PHYS1103",
+        "IE3081",
+        "ISG121",
+        "CSE3063",
+        "MATH1002"
+    ],
+    "PassedCourses": [
+        "CSE3215",
+        "TRD121",
+        "CSE2246",
+        "TRD122",
+        "CSE3055",
+        "CSE3033",
+        "PHYS1101",
+        "CSE4000",
+        "CSE4288",
+        "ECON2004",
+        "STAT2253",
+        "EE2031",
+        "EE2032",
+        "CSE2225",
+        "CSE4074",
+        "ATA122",
+        "ATA121",
+        "MBG1201",
+        "ISG122",
+        "CSE1200",
+        "MATH2055",
+        "CSE1242",
+        "CSE1241",
+        "CSE3000",
+        "CSE4297",
+        "CSE4298",
+        "MATH1001",
+        "MATH2256",
+        "CSE2138",
+        "MATH2059"
+    ],
+    "LastName": "Snodin",
+    "Name": "Rebecca"
+}
