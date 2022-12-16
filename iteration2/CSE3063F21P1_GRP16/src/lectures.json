@@ -287,7 +287,7 @@
       "courseName": "Computer Programming II",
       "courseCode": "CSE1242",
       "credit": 6,
-      "preRequisiteCourse": [],
+      "preRequisiteCourse": ["CSE1241"],
       "courseSessions": [
         {
           "quota": 70,
@@ -514,7 +514,7 @@
       "courseName": "Data Structures",
       "courseCode": "CSE2225",
       "credit": 7,
-      "preRequisiteCourse": [],
+      "preRequisiteCourse": ["CSE1242"],
       "courseSessions": [
         {
           "quota": 70,
@@ -566,7 +566,7 @@
       "courseName": "Electric Circuits",
       "courseCode": "EE2031",
       "credit": 5,
-      "preRequisiteCourse": [],
+      "preRequisiteCourse": ["PHYS1102"],
       "courseSessions": [
         {
           "quota": 70,
@@ -622,7 +622,7 @@
       "courseName": "Numerical Methods",
       "courseCode": "MATH2059",
       "credit": 4,
-      "preRequisiteCourse": [],
+      "preRequisiteCourse": ["MATH1001"],
       "courseSessions": [
         {
           "quota": 70,
@@ -650,7 +650,7 @@
       "courseName": "Analysis of Algorithms",
       "courseCode": "CSE2246",
       "credit": 6,
-      "preRequisiteCourse": [],
+      "preRequisiteCourse": ["CSE2225"],
       "courseSessions": [
         {
           "quota": 70,
@@ -715,7 +715,7 @@
       "courseName": "Electronics",
       "courseCode": "EE2032",
       "credit": 5,
-      "preRequisiteCourse": [],
+      "preRequisiteCourse": ["EE2031"],
       "courseSessions": [
         {
           "quota": 40,
@@ -796,8 +796,7 @@
       "courseName": "Digital Logic Design",
       "courseCode": "CSE3215",
       "credit": 6,
-      "preRequisiteCourse": [
-      ],
+      "preRequisiteCourse": [],
       "courseSessions": [
         {
           "quota": 20,
@@ -825,9 +824,7 @@
       "courseName": "Operating Systems",
       "courseCode": "CSE3033",
       "credit": 7,
-      "preRequisiteCourse": [
-        "CSE2225"
-      ],
+      "preRequisiteCourse": ["CSE2225"],
       "courseSessions": [
         {
           "quota": 70,
@@ -855,9 +852,7 @@
       "courseName": "Database Systems",
       "courseCode": "CSE3055",
       "credit": 7,
-      "preRequisiteCourse": [
-        "CSE2225"
-      ],
+      "preRequisiteCourse": ["CSE2225"],
       "courseSessions": [
         {
           "quota": 70,
@@ -885,9 +880,7 @@
       "courseName": "Object-Oriented Software Design",
       "courseCode": "CSE3063",
       "credit": 5,
-      "preRequisiteCourse": [
-        "CSE1242"
-      ],
+      "preRequisiteCourse": ["CSE1242"],
       "courseSessions": [
         {
           "quota": 70,
@@ -915,8 +908,7 @@
       "courseName": "Modelling and Discrete Simulation",
       "courseCode": "IE3081",
       "credit": 4,
-      "preRequisiteCourse": [
-      ],
+      "preRequisiteCourse": ["STAT2253"],
       "courseSessions": [
         {
           "quota": 70,
@@ -1036,7 +1028,7 @@
       "courseName": "Introduction to Machine Learning",
       "courseCode": "CSE4288",
       "credit": 5,
-      "preRequisiteCourse": [],
+      "preRequisiteCourse": ["STAT2253"],
       "courseSessions": [
         {
           "quota": 70,
