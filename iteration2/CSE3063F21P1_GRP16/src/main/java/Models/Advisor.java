@@ -6,8 +6,6 @@ public class Advisor extends Lecturer{
     
     private ArrayList<Course> CourseList;
 
-
-
     public String courseApprovement (Student student, ArrayList<Course> waitingCourses){
         // Removing disapproved courses from approvement list and adding reminding parts to the transcript through registration system
         ArrayList<Integer> disApprovedCourses = new ArrayList<Integer>();
@@ -29,7 +27,6 @@ public class Advisor extends Lecturer{
             waitingCourses.get(i).getCourseEvents().get(0).getStudents().add(student);//successfully added student to i'th course
             waitingCourses.get(i).setQuotaCounter(waitingCourses.get(i).getQuotaCounter()+1);
 
-
             for(int j=0;j<student.getTranscript().getFailedCourses().size();j++){
                 if(waitingCourses.get(i).getCourseCode()==student.getTranscript().getFailedCourses().get(j).getCourseCode()){
                     System.out.println("Advisor: The course: " + waitingCourses.get(i).getCourseCode() + " was taken again by the student");
@@ -40,7 +37,7 @@ public class Advisor extends Lecturer{
 
         }
 
-        if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, waitingCourses)){
+        if (student.getStudentUtils().courseRegistrationSystem.addApprovedCoursesToTranscript(student, waitingCourses)){
             return "Successfully Approved";
         }
         else {
@@ -50,7 +47,7 @@ public class Advisor extends Lecturer{
     }
     public String addingCheckedCourses(Student student , ArrayList<Course> courses){
         // Method sends checked courses to registration system
-        if (student.courseRegistrationSystem.addApprovedCoursesToTranscript(student, courses)){
+        if (student.getStudentUtils().courseRegistrationSystem.addApprovedCoursesToTranscript(student, courses)){
             return "Successfully Approved";
         }
         else {
@@ -62,8 +59,6 @@ public class Advisor extends Lecturer{
     public Advisor(String newName, String newLastName) {
         FirstName = newName;
         LastName = newLastName;
-
-
     }
 
     public ArrayList<Student> getStudentList() {
@@ -73,5 +68,4 @@ public class Advisor extends Lecturer{
     public void setStudentList(ArrayList<Student> studentList) {
         StudentList = studentList;
     }
-    
 }
