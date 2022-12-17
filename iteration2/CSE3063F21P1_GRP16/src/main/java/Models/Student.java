@@ -76,13 +76,7 @@ public class Student extends Person {
         }
     }
 
-    public StudentID getStudentID() {
-        return studentID;
-    }
-
-    public void setStudentID(StudentID studentID) {
-        this.studentID = studentID;
-    }
+  
 
     public Advisor getAdvisor() {
         return advisor;
@@ -100,13 +94,7 @@ public class Student extends Person {
         this.transcript = transcript;
     }
 
-    public Payment getPaymentAmount() {
-        return paymentAmount;
-    }
 
-    public void setPaymentAmount(Payment paymentAmount) {
-        this.paymentAmount = paymentAmount;
-    }
 
     public StudentUtils getStudentUtils() {
         return studentUtils;

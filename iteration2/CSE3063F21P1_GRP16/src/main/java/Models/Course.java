@@ -72,43 +72,9 @@ public class Course {
     public void setQuota(int quota) {
         this.quota = quota;
     }
-    public String getPrerequisiteCourse() {
-        return prerequisiteCourse;
-    }
-    public void setPrerequisiteCourse(String prerequisiteCourse) {
-        this.prerequisiteCourse = prerequisiteCourse;
-    }
-    public int getCredits() {
-        return credits;
-    }
-    public void setCredits(int credits) {
-        this.credits = credits;
-    }
-    public Semester getCourseSemesterName() {
-        return courseSemesterName;
-    }
 
-    public ArrayList<CourseSession> getSessions() {
-        return sessions;
-    }
-    public void setSessions(ArrayList<CourseSession> sessions) {
-        this.sessions = sessions;
-    }
-    public int getQuotaCounter() {
-        return quotaCounter;
-    }
 
-    public void setQuotaCounter(int quotaCounter) {
-        this.quotaCounter = quotaCounter;
-    }
 
-    public int getRequieredCredits() {
-        return requiredCredits;
-    }
-
-    public void setRequieredCredits(int requieredCredits) {
-        this.requiredCredits = requieredCredits;
-    }
 
 
 
