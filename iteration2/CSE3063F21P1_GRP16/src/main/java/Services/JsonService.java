@@ -9,7 +9,10 @@ import Types.SemesterName;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -18,7 +21,40 @@ import java.util.ArrayList;
 public class JsonService {
 
 
+   public JsonService(File dir){
+
+        DeleteDirectory(dir);
+    }
+
+
+    public static void outputFileCreator(ArrayList<Course> thisSemesterCourses) {
+        PrintWriter output = null;
+        try {
+
+            File outputFile = new File("output.txt");
+            output = new PrintWriter(outputFile);
+
+            for (int i = 0; i < thisSemesterCourses.size(); i++) {
+                output.println("<<" + thisSemesterCourses.get(i).getCourseName() + ">>");
+                for (int j = 0; j < thisSemesterCourses.get(i).getCourseEvents().size(); j++) {
+
+                    output.print(thisSemesterCourses.get(i).getCourseEvents().get(j).toString());
+
+                }
+            }
+
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            if (output != null) output.close();
+        }
+
+    }
+
     public static ArrayList<Course> InitCourses(String fileName) throws IOException {
+
+
 
 
         String jsonString = new String(Files.readAllBytes(Paths.get(fileName)), StandardCharsets.UTF_8);
@@ -90,6 +126,16 @@ public class JsonService {
 
     }
 
+
+    public static void DeleteDirectory(File dir) {
+
+        for (File file : dir.listFiles()) {
+            if (file.isDirectory())
+                DeleteDirectory(file);
+            file.delete();
+        }
+
+    }
     public ArrayList<Advisor> InitAdvisors(String s) throws IOException {
 
 
