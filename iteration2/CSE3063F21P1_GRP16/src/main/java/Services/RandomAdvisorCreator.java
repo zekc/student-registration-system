@@ -16,7 +16,7 @@ public class RandomAdvisorCreator {
 
         ArrayList<Advisor> advisors = new ArrayList<Advisor>();
 
-        for (int i = 0; i <= count; i = i + 1) {
+        for (int i = 0; i < count; i = i + 1) {
 
             String newName = names[(int) (Math.random()*names.length)];
             String newLastName = names[(int) (Math.random()*lastNames.length)];
