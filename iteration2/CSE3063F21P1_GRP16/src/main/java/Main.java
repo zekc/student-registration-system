@@ -23,19 +23,16 @@ public class Main {
 
         JsonService jsonService = new JsonService(StudentsFile);
 
-        ArrayList<Advisor> advisors = new ArrayList<Advisor>();
+        ArrayList<Advisor> advisors = jsonService.InitAdvisors("src/advisors.json");
 
         ArrayList<Course> fullCourseList = JsonService.InitCourses("src/lectures.json");
-        advisors = jsonService.InitAdvisors("src/advisors.json");
 
         RandomStudentGenerator generator = new RandomStudentGenerator();
         RandomAdvisorCreator advisorCreator = new RandomAdvisorCreator();
         registrationSystem = CourseRegistrationSystem.getRegistrationSystem();
 
-        ArrayList<Student> students = new ArrayList<Student>();
+        ArrayList<Student> students = generator.GenerateRandomStudents( fullCourseList);
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvailableCourses(SemesterName.SPRING, fullCourseList);
-
-        students = generator.GenerateRandomStudents( fullCourseList);
 
         for (int i = 0; i < students.size(); i = i + 1) {
 
@@ -52,7 +49,6 @@ public class Main {
 
         for (int i = 0; i < students.size(); i = i + 1) {
 
-            System.out.println(students.get(i).FirstName + " " + students.get(i).LastName + "is selecting course");
             students.get(i).getStudentUtils().SelectRandomCourses(ThisSemesterCourses);
             System.out.println(students.get(i).getStudentUtils().enrollTheCourse(students.get(i)));
 

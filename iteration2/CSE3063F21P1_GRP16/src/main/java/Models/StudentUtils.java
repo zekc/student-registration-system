@@ -34,6 +34,7 @@ public class StudentUtils {
     }
 
     public void SelectRandomCourses(ArrayList<Course> avaibleCourses) {
+        System.out.println(FirstName + " " + LastName + "is selecting course");
         selectedCourses.clear();
         int randomAmount = (int) Math.min(Math.max(5, avaibleCourses.size() * Math.random()), 1);
         for (int i = 0; i < randomAmount; i = i + 1) {
