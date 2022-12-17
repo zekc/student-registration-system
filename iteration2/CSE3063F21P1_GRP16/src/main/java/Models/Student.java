@@ -18,13 +18,13 @@ public class Student extends Person {
     private int StudentSemesterNo;
     private static FileWriter file;
 
-    public Student(String newFirstName, String newLastName, ArrayList<Course> allCourses) {
+    public Student(String newFirstName, String newLastName) {
 
         studentID = new StudentID("CSE", Integer.toString((int) Math.max(18, Math.random() * 20)), Integer.toString(Math.max(10, ((int) (Math.random() * 50)))));
         StudentSemesterNo = (int) (Math.random() * 5 + 2);
         FirstName = newFirstName;
         LastName = newLastName;
-        transcript = new Transcript(allCourses);
+        transcript = new Transcript();
         studentUtils=new StudentUtils();
     }
 
@@ -112,5 +112,9 @@ public class Student extends Person {
 
     public void setStudentUtils(StudentUtils studentUtils) {
         this.studentUtils = studentUtils;
+    }
+
+    public void addSemester(ArrayList<Course> Courses, Integer semesterNo, SemesterName semesterName){
+        transcript.addSemester(Courses, semesterNo, semesterName);
     }
 }

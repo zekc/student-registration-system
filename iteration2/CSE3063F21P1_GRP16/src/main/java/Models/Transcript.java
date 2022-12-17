@@ -19,29 +19,29 @@ public class Transcript {
 	HashMap<Course, Integer>
 	credit_Map = new HashMap<Course, Integer>();
 
-	public Transcript(ArrayList<Course> Courses) {
+	public Transcript() {
 
-		if (Math.random() * 2 == 0) {
-			semester = new Semester(4, SemesterName.FALL);
-		} 
-		else {
-			semester = new Semester(4, SemesterName.SPRING);
-		}
+		// if (Math.random() * 2 == 0) {
+		// 	semester = new Semester(4, SemesterName.FALL);
+		// } 
+		// else {
+		// 	semester = new Semester(4, SemesterName.SPRING);
+		// }
 
 		passedCourses = new ArrayList<Course>();
 		failedCourses = new ArrayList<Course>();
 
-		int PassedAmount = (int) (Math.random() * 15);
-		int RandomFailed = (int) (Math.random() * PassedAmount);
-		for (int i = 0; i < PassedAmount; i = i + 1) {
-			if (i == RandomFailed) {
-				failedCourses.add(Courses.get(i));
-			} 
-			else {
-				passedCourses.add(Courses.get(i));
-				this.completedCredits+=Courses.get(i).getCredits();
-			}
-		}
+		// int PassedAmount = (int) (Math.random() * 15);
+		// int RandomFailed = (int) (Math.random() * PassedAmount);
+		// for (int i = 0; i < PassedAmount; i = i + 1) {
+		// 	if (i == RandomFailed) {
+		// 		failedCourses.add(Courses.get(i));
+		// 	} 
+		// 	else {
+		// 		passedCourses.add(Courses.get(i));
+		// 		this.completedCredits+=Courses.get(i).getCredits();
+		// 	}
+		// }
 	}
 
 	public boolean addCourses(Student student, ArrayList<Course> courses) {
@@ -97,6 +97,21 @@ public class Transcript {
 
 	public int getCompletedCredits() {
 		return completedCredits;
+	}
+	// Tis function take list of courses and assign them randomly for passed and failed courses
+	public void addSemester(ArrayList<Course> Courses, Integer semesterNo, SemesterName semesterName){
+		semester = new Semester(semesterNo, semesterName);
+		int PassedAmount = (int) (Math.random() * (Courses.size()));
+		int RandomFailed = (int) (Math.random() * PassedAmount);
+		for (int i = 0; i < PassedAmount; i = i + 1) {
+			if (i == RandomFailed) {
+				failedCourses.add(Courses.get(i));
+			} 
+			else {
+				passedCourses.add(Courses.get(i));
+				this.completedCredits+=Courses.get(i).getCredits();
+			}
+		}
 	}
 
 }
