@@ -33,14 +33,17 @@ public class StudentUtils {
         }
     }
 
-    public void SelectRandomCourses(ArrayList<Course> avaibleCourses) {
-        System.out.println(FirstName + " " + LastName + "is selecting course");
+    public void SelectRandomCourses(ArrayList<Course> avaibleCourses,Student student) {
+        System.out.println(student.FirstName + " " + student.LastName + "is selecting course");
         selectedCourses.clear();
         int randomAmount = (int) Math.min(Math.max(5, avaibleCourses.size() * Math.random()), 1);
         for (int i = 0; i < randomAmount; i = i + 1) {
             int randomClass = (int) (avaibleCourses.size() * Math.random());
             AddCourse(avaibleCourses.get(randomClass));
         }
+
+
+        System.out.println(enrollTheCourse(student));
     }
 
     public ArrayList<Course> selectTheCourse(ArrayList<Course> courses) {

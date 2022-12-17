@@ -28,7 +28,7 @@ public class Main {
         ArrayList<Course> fullCourseList = JsonService.InitCourses("src/lectures.json");
 
         RandomStudentGenerator generator = new RandomStudentGenerator();
-        RandomAdvisorCreator advisorCreator = new RandomAdvisorCreator();
+
         registrationSystem = CourseRegistrationSystem.getRegistrationSystem();
 
         ArrayList<Student> students = generator.GenerateRandomStudents( fullCourseList);
@@ -48,10 +48,7 @@ public class Main {
         }
 
         for (int i = 0; i < students.size(); i = i + 1) {
-
-            students.get(i).getStudentUtils().SelectRandomCourses(ThisSemesterCourses);
-            System.out.println(students.get(i).getStudentUtils().enrollTheCourse(students.get(i)));
-
+            students.get(i).getStudentUtils().SelectRandomCourses(ThisSemesterCourses,students.get(i));
         }
 
         jsonService.outputFileCreator(ThisSemesterCourses);
