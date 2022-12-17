@@ -47,9 +47,14 @@ public class Student extends Person {
                 .map(Course::getCourseCode)
                 .collect(Collectors.toSet())
         );
+        JSONArray selectedCourses = new JSONArray(getStudentUtils().getSelectedCourses().stream()
+                .map(Course::getCourseCode)
+                .collect(Collectors.toSet())
+        );
 
         obj.put("PassedCourses", passedCourses);
         obj.put("FailedCourses", failedCourses);
+        obj.put("SelectedCourses", selectedCourses);
 
         obj.put("TranskriptObj", Trans);
         try {

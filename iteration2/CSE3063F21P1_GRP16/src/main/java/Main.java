@@ -38,7 +38,7 @@ public class Main {
 
             students.get(i).setAdvisor(advisors.get((int) (Math.random() * advisors.size())));
 
-            students.get(i).saveToJson();
+
         }
 
         System.out.println("Available Classes This Semester: \n");
@@ -49,6 +49,7 @@ public class Main {
 
         for (int i = 0; i < students.size(); i = i + 1) {
             students.get(i).getStudentUtils().SelectRandomCourses(ThisSemesterCourses,students.get(i));
+            students.get(i).saveToJson();
         }
 
         jsonService.outputFileCreator(ThisSemesterCourses);

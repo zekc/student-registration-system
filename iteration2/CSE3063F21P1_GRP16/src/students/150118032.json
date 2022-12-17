@@ -1,26 +1,28 @@
 {
-    "TranskriptObj": {"gpa": 2.2714593053846666},
+    "TranskriptObj": {"gpa": 1.9327815895725464},
     "FailedCourses": [
         "CSE4074",
         "CSE3063",
+        "TRD121",
         "CSE1200",
-        "CSE1241",
-        "CSE3055",
+        "MATH2055",
+        "CSE2023",
+        "PHYS1101",
         "CSE3000",
-        "CSE3033",
+        "CSE3055",
         "CSE4297",
-        "ECON2004",
-        "MATH1002",
+        "CSE4288",
+        "MATH2059",
         "CSE2138",
-        "EE2031",
-        "EE2032"
+        "EE2032",
+        "CSE2225"
     ],
     "PassedCourses": [
         "IE3081",
         "TRD121",
+        "CSE3215",
         "PHYS1104",
         "CSE2246",
-        "CSE3215",
         "TRD122",
         "PHYS1102",
         "PHYS1103",
@@ -50,8 +52,10 @@
         "CSE4298",
         "MATH1001",
         "MATH2256",
+        "MATH1002",
         "MATH2059"
     ],
-    "LastName": "Jaqueme",
-    "Name": "Natale"
+    "LastName": "Nowak",
+    "SelectedCourses": ["PHYS1101"],
+    "Name": "Tilly"
 }

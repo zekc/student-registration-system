@@ -1,426 +1,459 @@
 <<Atatürk İlkeleri ve İnkılap Tarihi I>>
-    Total Number of Student who successfully enrolled to the course: 10
+    Total Number of Student who successfully enrolled to the course: 7
      -List Of Students:
-      *Garold Domini
-      *Lynnet Nowak
-      *Oliy Late
-      *Hertha Rankcom
-      *Garold Bockman
-      *Garold Treharne
-      *Hervey Vieyra
-      *Kelli Renihan
-      *Hertha Wilks
-      *Rebecca Gannaway
-    Total Number of Student who taking the course again: 9
+      *Perla Gallety
+      *Lucie Cuxon
+      *Kelli Greenhough
+      *Kaycee Jaqueme
+      *Tedra Boome
+      *Garold Wozencroft
+      *Joann Vieyra
+    Total Number of Student who taking the course again: 4
      -List Of Students:
-      *Garold Domini
-      *Lynnet Nowak
-      *Oliy Late
-      *Hertha Rankcom
-      *Garold Bockman
-      *Garold Treharne
-      *Kelli Renihan
-      *Hertha Wilks
-      *Rebecca Gannaway
+      *Perla Gallety
+      *Lucie Cuxon
+      *Kelli Greenhough
+      *Tedra Boome
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Introduction to Modern Biology>>
-    Total Number of Student who successfully enrolled to the course: 18
+    Total Number of Student who successfully enrolled to the course: 24
      -List Of Students:
-      *Brendin McMillam
-      *Natale Cuxon
-      *Raddy Grigoriev
-      *Magnum Moring
-      *Fawnia O'Hanley
-      *Tedra Nowak
-      *Farleigh Waber
-      *Benedetta Itzik
-      *Consuela Gulliman
-      *Lucie Scurman
-      *Ruthann Late
-      *Tilly Renihan
-      *Velvet Domini
-      *Lynnet Clewes
-      *Hollis Waber
-      *Fawnia Muckeen
-      *Hervey Twydell
-      *Darren Garric
-    Total Number of Student who taking the course again: 14
+      *Garik Gallety
+      *Joann Clewes
+      *Noami Wilks
+      *Fawnia Benterman
+      *Guillema Basnett
+      *Lynnet Garric
+      *Rebe Skouling
+      *Hertha Mcettrick
+      *Lucie Moring
+      *Lucias O'Hanley
+      *Adler Letham
+      *Lucias MacGahy
+      *Mathian Gannaway
+      *Lucie Itzik
+      *Kelli Musson
+      *Karl Itzik
+      *Garold Grigoriev
+      *Ruthann Cymper
+      *Darren Frood
+      *Lucie Waber
+      *Lynnet Waber
+      *Athena Nowak
+      *Antony Treharne
+      *Lynnet Saice
+    Total Number of Student who taking the course again: 19
      -List Of Students:
-      *Brendin McMillam
-      *Natale Cuxon
-      *Magnum Moring
-      *Fawnia O'Hanley
-      *Tedra Nowak
-      *Farleigh Waber
-      *Benedetta Itzik
-      *Consuela Gulliman
-      *Lucie Scurman
-      *Ruthann Late
-      *Tilly Renihan
-      *Lynnet Clewes
-      *Hervey Twydell
-      *Darren Garric
+      *Joann Clewes
+      *Noami Wilks
+      *Fawnia Benterman
+      *Guillema Basnett
+      *Lynnet Garric
+      *Rebe Skouling
+      *Lucie Moring
+      *Lucias O'Hanley
+      *Adler Letham
+      *Lucias MacGahy
+      *Mathian Gannaway
+      *Kelli Musson
+      *Karl Itzik
+      *Garold Grigoriev
+      *Darren Frood
+      *Lucie Waber
+      *Athena Nowak
+      *Antony Treharne
+      *Lynnet Saice
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Introduction to Computer Engineering>>
-    Total Number of Student who successfully enrolled to the course: 19
+    Total Number of Student who successfully enrolled to the course: 18
      -List Of Students:
-      *Mathian Musson
-      *Kalle Musson
-      *Marlin Waber
-      *Garold MacGahy
-      *Natale Gannaway
-      *Velvet Durrance
-      *Raddy Sugden
-      *Antony McMillam
-      *Lucie Gannaway
-      *Noellyn Grigoriev
-      *Lucias O'Hanley
-      *Antony Moring
-      *Magnum Moring
-      *Darren Late
-      *Welsh Snodin
-      *Adler Mcettrick
-      *Lucie Nowak
-      *Rebecca Moring
+      *Helaine Bockman
       *Farleigh Domini
+      *Rebecca Greenhough
+      *Hertha Wilks
+      *Micky Campsall
+      *Linda McMillam
+      *Lucias Welham
+      *Lucie Cymper
+      *Ruthann Gulliman
+      *Fawnia Scurman
+      *Mitchael Frood
+      *Kalle Cuxon
+      *Magnum Vieyra
+      *Rebecca Renihan
+      *Darren Muckeen
+      *Darren Gannaway
+      *Rebe Jaqueme
+      *Tilly Boome
     Total Number of Student who taking the course again: 11
      -List Of Students:
-      *Kalle Musson
-      *Garold MacGahy
-      *Natale Gannaway
-      *Velvet Durrance
-      *Noellyn Grigoriev
-      *Lucias O'Hanley
-      *Antony Moring
-      *Welsh Snodin
-      *Adler Mcettrick
-      *Lucie Nowak
-      *Rebecca Moring
+      *Helaine Bockman
+      *Rebecca Greenhough
+      *Hertha Wilks
+      *Micky Campsall
+      *Lucias Welham
+      *Lucie Cymper
+      *Ruthann Gulliman
+      *Mitchael Frood
+      *Kalle Cuxon
+      *Magnum Vieyra
+      *Rebecca Renihan
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Computer Programming I>>
-    Total Number of Student who successfully enrolled to the course: 10
+    Total Number of Student who successfully enrolled to the course: 17
      -List Of Students:
-      *Lucie Gulliman
-      *Raddy Greenhough
-      *Garik Denisovich
-      *Tedra Jaqueme
-      *Garik Grigoriev
-      *Rafaellle McMillam
-      *Lynnet Domini
-      *Consuela Domini
-      *Kaycee Waber
-      *Lucias McMillam
-    Total Number of Student who taking the course again: 6
+      *Fawnia Luchelli
+      *Hertha Frood
+      *Kaycee Wodeland
+      *Oliy Luchelli
+      *Lucie Snodin
+      *Russ Saice
+      *Micky Greenhough
+      *Darren Skouling
+      *Perla Nowak
+      *Tilly De Caroli
+      *Russ Tatnell
+      *Lucias Moring
+      *Linda Nowak
+      *Adler Treharne
+      *Ruthann Vieyra
+      *Athena Cuxon
+      *Mitchael Frood
+    Total Number of Student who taking the course again: 15
      -List Of Students:
-      *Lucie Gulliman
-      *Raddy Greenhough
-      *Garik Denisovich
-      *Tedra Jaqueme
-      *Kaycee Waber
-      *Lucias McMillam
+      *Fawnia Luchelli
+      *Hertha Frood
+      *Kaycee Wodeland
+      *Oliy Luchelli
+      *Lucie Snodin
+      *Russ Saice
+      *Micky Greenhough
+      *Darren Skouling
+      *Perla Nowak
+      *Tilly De Caroli
+      *Russ Tatnell
+      *Linda Nowak
+      *Adler Treharne
+      *Ruthann Vieyra
+      *Mitchael Frood
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Calculus I>>
-    Total Number of Student who successfully enrolled to the course: 17
+    Total Number of Student who successfully enrolled to the course: 15
      -List Of Students:
-      *Athena De Caroli
-      *Rebe Itzik
-      *Ruthann Clewes
-      *Garik Chicchelli
-      *Tilly Wozencroft
-      *Fawnia Waber
-      *Garik Dennant
-      *Noellyn Skouling
-      *Kelli Vieyra
-      *Mitchael Boome
-      *Darren Skouling
-      *Micky Cymper
-      *Noellyn Mcettrick
-      *Natty Denisovich
-      *Darren Dennant
-      *Benedetta Vieyra
-      *Karl Wilks
-    Total Number of Student who taking the course again: 12
+      *Rebe Bockman
+      *Noami Basnett
+      *Brendin Campsall
+      *Lucie Skouling
+      *Antony Musson
+      *Helaine Boome
+      *Garik Cymper
+      *Hollis McMillam
+      *Antony Sugden
+      *Tilly Basnett
+      *Natale Boome
+      *Charmane Moring
+      *Russ Wodeland
+      *Hollis De Caroli
+      *Rebe Musson
+    Total Number of Student who taking the course again: 13
      -List Of Students:
-      *Rebe Itzik
-      *Ruthann Clewes
-      *Garik Chicchelli
-      *Tilly Wozencroft
-      *Fawnia Waber
-      *Garik Dennant
-      *Noellyn Skouling
-      *Kelli Vieyra
-      *Mitchael Boome
-      *Darren Skouling
-      *Natty Denisovich
-      *Darren Dennant
+      *Rebe Bockman
+      *Noami Basnett
+      *Brendin Campsall
+      *Lucie Skouling
+      *Antony Musson
+      *Helaine Boome
+      *Garik Cymper
+      *Hollis McMillam
+      *Antony Sugden
+      *Tilly Basnett
+      *Charmane Moring
+      *Russ Wodeland
+      *Rebe Musson
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Physics I>>
-    Total Number of Student who successfully enrolled to the course: 16
+    Total Number of Student who successfully enrolled to the course: 21
      -List Of Students:
-      *Brendin Domini
-      *Perla McMillam
-      *Rebe Basnett
-      *Velvet Garric
-      *Rebe Campsall
-      *Hervey Letham
-      *Kaycee Letham
-      *Oliy Snodin
-      *Oliy Snodin
-      *Benedetta De Caroli
-      *Raddy McMillam
-      *Darren Welham
-      *Lynnet Durrance
-      *Tedra Gulliman
-      *Kelli Wilks
-      *Natale Jaqueme
-    Total Number of Student who taking the course again: 8
+      *Mathian Cymper
+      *Kelli Welham
+      *Antony Benterman
+      *Rebe Boome
+      *Karl Campsall
+      *Adler Sugden
+      *Michelle Scurman
+      *Consuela Chicchelli
+      *Magnum Gannaway
+      *Ruthann Moring
+      *Antony Clewes
+      *Tilly Rankcom
+      *Linda Gannaway
+      *Garold Snodin
+      *Velvet McMillam
+      *Michelle Letham
+      *Antony Skouling
+      *Tilly Nowak
+      *Hertha Snodin
+      *Athena Grigoriev
+      *Michelle Domini
+    Total Number of Student who taking the course again: 14
      -List Of Students:
-      *Brendin Domini
-      *Perla McMillam
-      *Rebe Basnett
-      *Velvet Garric
-      *Rebe Campsall
-      *Oliy Snodin
-      *Oliy Snodin
-      *Benedetta De Caroli
+      *Mathian Cymper
+      *Antony Benterman
+      *Rebe Boome
+      *Karl Campsall
+      *Adler Sugden
+      *Michelle Scurman
+      *Consuela Chicchelli
+      *Magnum Gannaway
+      *Antony Clewes
+      *Tilly Rankcom
+      *Linda Gannaway
+      *Velvet McMillam
+      *Michelle Letham
+      *Athena Grigoriev
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Physics Lab I>>
-    Total Number of Student who successfully enrolled to the course: 11
+    Total Number of Student who successfully enrolled to the course: 18
      -List Of Students:
-      *Natale Gulliman
-      *Rebe Muckeen
-      *Michelle Chicchelli
-      *Noami Dennant
-      *Hollis Late
-      *Natty Vieyra
-      *Michelle Domini
-      *Tilly Benterman
-      *Kalle Denisovich
-      *Guillema Renihan
-      *Kelli McMillam
-    Total Number of Student who taking the course again: 9
+      *Noellyn Rankcom
+      *Benedetta Greenhough
+      *Garold Greenhough
+      *Benedetta Basnett
+      *Mitchael Gulliman
+      *Mitchael O'Hanley
+      *Welsh Grigoriev
+      *Hervey Saice
+      *Mathian Frood
+      *Garold Boome
+      *Farleigh Jaqueme
+      *Adler Saice
+      *Velvet Saice
+      *Natty Garric
+      *Noami Twydell
+      *Lynnet Musson
+      *Magnum Boome
+      *Garik Twydell
+    Total Number of Student who taking the course again: 7
      -List Of Students:
-      *Natale Gulliman
-      *Rebe Muckeen
-      *Michelle Chicchelli
-      *Noami Dennant
-      *Hollis Late
-      *Natty Vieyra
-      *Michelle Domini
-      *Tilly Benterman
-      *Kelli McMillam
+      *Garold Greenhough
+      *Mitchael O'Hanley
+      *Welsh Grigoriev
+      *Hervey Saice
+      *Mathian Frood
+      *Farleigh Jaqueme
+      *Lynnet Musson
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Türk Dili I>>
-    Total Number of Student who successfully enrolled to the course: 9
+    Total Number of Student who successfully enrolled to the course: 13
      -List Of Students:
-      *Magnum Rankcom
-      *Welsh Chicchelli
-      *Athena Cymper
-      *Lucie Musson
-      *Magnum Scurman
-      *Hertha Denisovich
-      *Hollis Gallety
-      *Charmane Twydell
-      *Kalle Gulliman
-    Total Number of Student who taking the course again: 6
+      *Micky Muckeen
+      *Garold Greenhough
+      *Cal Wodeland
+      *Hervey Skouling
+      *Cal Wozencroft
+      *Natty Durrance
+      *Raddy Sugden
+      *Marlin O'Hanley
+      *Mathian Cuxon
+      *Oliy Gallety
+      *Benedetta Wozencroft
+      *Kelli Renihan
+      *Natale Snodin
+    Total Number of Student who taking the course again: 11
      -List Of Students:
-      *Magnum Rankcom
-      *Athena Cymper
-      *Magnum Scurman
-      *Hertha Denisovich
-      *Hollis Gallety
-      *Kalle Gulliman
+      *Micky Muckeen
+      *Garold Greenhough
+      *Cal Wodeland
+      *Hervey Skouling
+      *Cal Wozencroft
+      *Natty Durrance
+      *Raddy Sugden
+      *Mathian Cuxon
+      *Benedetta Wozencroft
+      *Kelli Renihan
+      *Natale Snodin
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Discrete Computational Structures>>
-    Total Number of Student who successfully enrolled to the course: 16
+    Total Number of Student who successfully enrolled to the course: 15
      -List Of Students:
-      *Hervey Welham
-      *Raddy MacGahy
-      *Mathian McMillam
-      *Ruthann Late
-      *Garold Dennant
-      *Veronike Dennant
-      *Perla Rankcom
-      *Michelle Boome
-      *Joann Cymper
-      *Velvet Luchelli
-      *Darren Boome
-      *Rebecca Letham
-      *Mathian Waber
-      *Athena O'Hanley
+      *Garik Itzik
+      *Rafaellle Wodeland
+      *Athena Itzik
+      *Benedetta Saice
+      *Helaine Nowak
+      *Garold Sugden
+      *Lucias Late
       *Kelli Sugden
-      *Hollis Clewes
-    Total Number of Student who taking the course again: 9
+      *Fawnia Luchelli
+      *Hertha Musson
+      *Kelli Nowak
+      *Guillema Scurman
+      *Lucias Musson
+      *Rebecca Jaqueme
+      *Brendin Greenhough
+    Total Number of Student who taking the course again: 11
      -List Of Students:
-      *Raddy MacGahy
-      *Mathian McMillam
-      *Ruthann Late
-      *Garold Dennant
-      *Veronike Dennant
-      *Perla Rankcom
-      *Joann Cymper
-      *Darren Boome
-      *Rebecca Letham
+      *Garik Itzik
+      *Rafaellle Wodeland
+      *Athena Itzik
+      *Benedetta Saice
+      *Helaine Nowak
+      *Garold Sugden
+      *Lucias Late
+      *Kelli Nowak
+      *Guillema Scurman
+      *Lucias Musson
+      *Rebecca Jaqueme
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Data Structures>>
-    Total Number of Student who successfully enrolled to the course: 6
+    Total Number of Student who successfully enrolled to the course: 4
      -List Of Students:
-      *Natale Waber
-      *Natale Benterman
-      *Welsh Cuxon
-      *Farleigh De Caroli
-      *Darren Late
-      *Rebe Gannaway
+      *Hervey Renihan
+      *Tilly Clewes
+      *Micky Gallety
+      *Tilly Cuxon
     Total Number of Student who taking the course again: 3
      -List Of Students:
-      *Natale Waber
-      *Welsh Cuxon
-      *Darren Late
-    Total Number of Student who couldn't take the course because of prerequisites: 22
+      *Hervey Renihan
+      *Tilly Clewes
+      *Micky Gallety
+    Total Number of Student who couldn't take the course because of prerequisites: 14
      -List Of Students:
-      *Noami De Caroli
-      *Ruthann Snodin
-      *Guillema Denisovich
-      *Athena O'Hanley
-      *Raddy Skouling
-      *Joann Gallety
-      *Darren Vieyra
-      *Adler Jaqueme
-      *Helaine Snodin
-      *Noami Gallety
-      *Fawnia Boome
-      *Adler Late
-      *Ruthann Bockman
-      *Athena Cymper
-      *Antony Gallety
-      *Tilly Cymper
-      *Lucie Jaqueme
-      *Welsh Domini
-      *Cal Itzik
-      *Ruthann Letham
-      *Welsh Renihan
-      *Charmane Domini
+      *Russ Dennant
+      *Noami Greenhough
+      *Hervey Garric
+      *Kaycee Garric
+      *Natty Skouling
+      *Velvet Cymper
+      *Noami Domini
+      *Rebe Skouling
+      *Kalle Musson
+      *Noellyn Dennant
+      *Linda Musson
+      *Benedetta Cymper
+      *Velvet Frood
+      *Benedetta Treharne
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Engineering Economy>>
-    Total Number of Student who successfully enrolled to the course: 18
+    Total Number of Student who successfully enrolled to the course: 13
      -List Of Students:
-      *Hollis Jaqueme
-      *Darren Gulliman
-      *Garold Wodeland
-      *Tilly McMillam
-      *Marlin McMillam
-      *Darren Wodeland
-      *Perla Letham
-      *Kaycee Moring
-      *Welsh Denisovich
-      *Rebe Benterman
-      *Linda McMillam
-      *Kaycee MacGahy
-      *Hollis Scurman
-      *Raddy Denisovich
-      *Mathian Gallety
-      *Adler Jaqueme
-      *Kalle Saice
-      *Cal Rankcom
-    Total Number of Student who taking the course again: 16
+      *Lucie Vieyra
+      *Tedra Gulliman
+      *Veronike Gulliman
+      *Velvet Domini
+      *Hollis Chicchelli
+      *Rebe Muckeen
+      *Darren Gallety
+      *Hertha Skouling
+      *Rebecca Denisovich
+      *Hollis Wozencroft
+      *Garik Tatnell
+      *Rebecca Late
+      *Lucie Gulliman
+    Total Number of Student who taking the course again: 10
      -List Of Students:
-      *Hollis Jaqueme
-      *Darren Gulliman
-      *Garold Wodeland
-      *Tilly McMillam
-      *Marlin McMillam
-      *Darren Wodeland
-      *Perla Letham
-      *Kaycee Moring
-      *Welsh Denisovich
-      *Rebe Benterman
-      *Kaycee MacGahy
-      *Hollis Scurman
-      *Raddy Denisovich
-      *Mathian Gallety
-      *Adler Jaqueme
-      *Kalle Saice
+      *Lucie Vieyra
+      *Tedra Gulliman
+      *Veronike Gulliman
+      *Velvet Domini
+      *Hollis Chicchelli
+      *Rebe Muckeen
+      *Darren Gallety
+      *Hertha Skouling
+      *Rebecca Denisovich
+      *Garik Tatnell
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Electric Circuits>>
-    Total Number of Student who successfully enrolled to the course: 3
+    Total Number of Student who successfully enrolled to the course: 2
      -List Of Students:
-      *Natty Grigoriev
-      *Kelli Nowak
-      *Cal Moring
+      *Magnum Renihan
+      *Antony Welham
     Total Number of Student who taking the course again: 2
      -List Of Students:
-      *Natty Grigoriev
-      *Kelli Nowak
-    Total Number of Student who couldn't take the course because of prerequisites: 13
+      *Magnum Renihan
+      *Antony Welham
+    Total Number of Student who couldn't take the course because of prerequisites: 18
      -List Of Students:
-      *Garold Letham
-      *Darren Vieyra
-      *Natale Musson
-      *Hertha Greenhough
-      *Charmane De Caroli
-      *Adler Grigoriev
-      *Noami Basnett
-      *Kalle O'Hanley
-      *Benedetta Rankcom
-      *Benedetta Wozencroft
-      *Russ Waber
-      *Oliy Durrance
-      *Kelli Twydell
+      *Kaycee Benterman
+      *Welsh Dennant
+      *Kelli Benterman
+      *Linda Domini
+      *Kaycee Late
+      *Perla O'Hanley
+      *Charmane Scurman
+      *Hollis Clewes
+      *Guillema McMillam
+      *Kaycee Gannaway
+      *Brendin Gulliman
+      *Veronike Gulliman
+      *Brendin Mcettrick
+      *Rafaellle Chicchelli
+      *Athena Denisovich
+      *Benedetta Clewes
+      *Veronike Boome
+      *Rebe Letham
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Differential Equations>>
-    Total Number of Student who successfully enrolled to the course: 8
+    Total Number of Student who successfully enrolled to the course: 13
      -List Of Students:
-      *Linda Vieyra
-      *Michelle Durrance
-      *Kalle Dennant
-      *Cal McMillam
-      *Magnum Cymper
-      *Magnum Gannaway
-      *Michelle Vieyra
-      *Rebe Cuxon
-    Total Number of Student who taking the course again: 7
+      *Velvet Clewes
+      *Cal Campsall
+      *Perla Moring
+      *Benedetta Basnett
+      *Karl Basnett
+      *Hertha Denisovich
+      *Natty Boome
+      *Velvet Musson
+      *Rebe Denisovich
+      *Charmane Luchelli
+      *Hervey Sugden
+      *Garik Treharne
+      *Russ Cymper
+    Total Number of Student who taking the course again: 9
      -List Of Students:
-      *Linda Vieyra
-      *Michelle Durrance
-      *Kalle Dennant
-      *Cal McMillam
-      *Magnum Cymper
-      *Magnum Gannaway
-      *Michelle Vieyra
+      *Velvet Clewes
+      *Cal Campsall
+      *Perla Moring
+      *Benedetta Basnett
+      *Karl Basnett
+      *Hertha Denisovich
+      *Rebe Denisovich
+      *Charmane Luchelli
+      *Russ Cymper
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
@@ -428,52 +461,56 @@
 <<Numerical Methods>>
     Total Number of Student who successfully enrolled to the course: 0
     Total Number of Student who taking the course again: 0
-    Total Number of Student who couldn't take the course because of prerequisites: 21
+    Total Number of Student who couldn't take the course because of prerequisites: 11
      -List Of Students:
-      *Oliy Boome
-      *Kalle Scurman
-      *Kelli Luchelli
-      *Velvet Bockman
-      *Natale Treharne
-      *Velvet Late
-      *Adler Late
-      *Noellyn Denisovich
-      *Darren Domini
-      *Athena Vieyra
-      *Lucias Boome
-      *Micky Skouling
-      *Antony Mcettrick
-      *Velvet Letham
-      *Tilly De Caroli
-      *Athena Domini
-      *Magnum Late
-      *Kelli Jaqueme
-      *Linda Dennant
-      *Cal Wilks
-      *Natale Gannaway
+      *Cal Rankcom
+      *Mathian Basnett
+      *Hervey Cymper
+      *Cal Garric
+      *Perla Renihan
+      *Russ Vieyra
+      *Kelli Chicchelli
+      *Noami Renihan
+      *Hertha Nowak
+      *Darren Letham
+      *Marlin Cuxon
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Summer Practice I>>
-    Total Number of Student who successfully enrolled to the course: 9
+    Total Number of Student who successfully enrolled to the course: 17
      -List Of Students:
-      *Linda Twydell
-      *Darren Itzik
-      *Linda Durrance
-      *Karl Nowak
-      *Lynnet MacGahy
-      *Darren Skouling
-      *Adler Waber
-      *Mathian Waber
-      *Rebe Luchelli
-    Total Number of Student who taking the course again: 6
+      *Kaycee Muckeen
+      *Michelle Twydell
+      *Russ Dennant
+      *Hollis Twydell
+      *Marlin Moring
+      *Russ Treharne
+      *Garik Luchelli
+      *Joann Musson
+      *Brendin Scurman
+      *Tedra Clewes
+      *Karl Basnett
+      *Darren Moring
+      *Consuela Musson
+      *Veronike Chicchelli
+      *Karl Treharne
+      *Rafaellle Skouling
+      *Kalle Bockman
+    Total Number of Student who taking the course again: 12
      -List Of Students:
-      *Linda Twydell
-      *Darren Itzik
-      *Linda Durrance
-      *Karl Nowak
-      *Lynnet MacGahy
-      *Mathian Waber
+      *Kaycee Muckeen
+      *Michelle Twydell
+      *Russ Dennant
+      *Marlin Moring
+      *Russ Treharne
+      *Garik Luchelli
+      *Tedra Clewes
+      *Karl Basnett
+      *Darren Moring
+      *Consuela Musson
+      *Veronike Chicchelli
+      *Rafaellle Skouling
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
@@ -481,284 +518,249 @@
 <<Digital Logic Design>>
     Total Number of Student who successfully enrolled to the course: 20
      -List Of Students:
-      *Cal Scurman
-      *Farleigh Tatnell
-      *Russ Cymper
-      *Perla Tatnell
-      *Rebecca Wilks
-      *Mitchael Garric
-      *Darren Letham
-      *Lynnet Treharne
-      *Athena Grigoriev
-      *Natty Renihan
-      *Oliy Nowak
-      *Lynnet Luchelli
-      *Adler Late
-      *Natale Twydell
-      *Natty Muckeen
-      *Rebe Itzik
-      *Hertha Domini
-      *Linda Sugden
-      *Darren Waber
-      *Charmane Saice
+      *Tedra Durrance
+      *Rebecca Nowak
+      *Velvet Vieyra
+      *Kalle Cymper
+      *Guillema Vieyra
+      *Mitchael Moring
+      *Hervey Bockman
+      *Fawnia Frood
+      *Noami De Caroli
+      *Velvet Grigoriev
+      *Kalle Dennant
+      *Marlin Saice
+      *Joann Cuxon
+      *Joann Moring
+      *Kaycee Nowak
+      *Natty Clewes
+      *Brendin Wozencroft
+      *Athena Wodeland
+      *Kelli Gannaway
+      *Rebecca MacGahy
     Total Number of Student who taking the course again: 16
      -List Of Students:
-      *Farleigh Tatnell
-      *Russ Cymper
-      *Perla Tatnell
-      *Rebecca Wilks
-      *Mitchael Garric
-      *Lynnet Treharne
-      *Oliy Nowak
-      *Lynnet Luchelli
-      *Adler Late
-      *Natale Twydell
-      *Natty Muckeen
-      *Rebe Itzik
-      *Hertha Domini
-      *Linda Sugden
-      *Darren Waber
-      *Charmane Saice
+      *Tedra Durrance
+      *Rebecca Nowak
+      *Velvet Vieyra
+      *Kalle Cymper
+      *Guillema Vieyra
+      *Mitchael Moring
+      *Hervey Bockman
+      *Fawnia Frood
+      *Noami De Caroli
+      *Velvet Grigoriev
+      *Kalle Dennant
+      *Marlin Saice
+      *Joann Cuxon
+      *Kaycee Nowak
+      *Natty Clewes
+      *Kelli Gannaway
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
-    Total Number of Student who couldn't take the course because the is quota full: 2
+    Total Number of Student who couldn't take the course because the is quota full: 5
      -List Of Students:
-      *Farleigh Luchelli
-      *Velvet O'Hanley
+      *Lucias Nowak
+      *Michelle Chicchelli
+      *Garik Benterman
+      *Rebe Renihan
+      *Rafaellle Grigoriev
 <<Operating Systems>>
     Total Number of Student who successfully enrolled to the course: 0
     Total Number of Student who taking the course again: 0
-    Total Number of Student who couldn't take the course because of prerequisites: 16
+    Total Number of Student who couldn't take the course because of prerequisites: 12
      -List Of Students:
-      *Oliy Skouling
-      *Tilly Nowak
-      *Lucias Basnett
-      *Noellyn Clewes
-      *Magnum Gulliman
-      *Tedra Rankcom
-      *Kalle Rankcom
-      *Perla Treharne
-      *Farleigh Treharne
-      *Tedra Late
-      *Darren Muckeen
-      *Cal Late
-      *Athena Jaqueme
-      *Joann Rankcom
-      *Rafaellle Treharne
-      *Antony Frood
+      *Veronike Skouling
+      *Rafaellle Greenhough
+      *Kalle Letham
+      *Raddy Sugden
+      *Noellyn Letham
+      *Consuela Bockman
+      *Hervey Denisovich
+      *Noellyn Muckeen
+      *Magnum Frood
+      *Lynnet Saice
+      *Veronike McMillam
+      *Garik Cymper
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Database Systems>>
     Total Number of Student who successfully enrolled to the course: 0
     Total Number of Student who taking the course again: 0
-    Total Number of Student who couldn't take the course because of prerequisites: 16
+    Total Number of Student who couldn't take the course because of prerequisites: 15
      -List Of Students:
-      *Noellyn McMillam
-      *Fawnia Campsall
-      *Adler Luchelli
-      *Antony Gulliman
-      *Velvet Boome
-      *Farleigh Wodeland
-      *Charmane Itzik
-      *Karl Nowak
-      *Linda Mcettrick
-      *Tedra Skouling
-      *Oliy Treharne
-      *Garik Bockman
-      *Rebe De Caroli
-      *Rebecca Clewes
-      *Helaine Wodeland
-      *Consuela Frood
+      *Mathian Wilks
+      *Karl MacGahy
+      *Darren MacGahy
+      *Raddy Gannaway
+      *Mathian Twydell
+      *Noellyn Sugden
+      *Lucie Renihan
+      *Garik Boome
+      *Hollis Greenhough
+      *Mitchael De Caroli
+      *Karl Gannaway
+      *Tilly Gallety
+      *Rebe Scurman
+      *Micky Dennant
+      *Natale O'Hanley
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Object-Oriented Software Design>>
-    Total Number of Student who successfully enrolled to the course: 2
+    Total Number of Student who successfully enrolled to the course: 10
      -List Of Students:
-      *Tedra Letham
-      *Darren Letham
-    Total Number of Student who taking the course again: 1
+      *Mitchael Moring
+      *Tilly Late
+      *Adler Scurman
+      *Lucie Late
+      *Kelli Vieyra
+      *Rebecca O'Hanley
+      *Micky Late
+      *Veronike De Caroli
+      *Karl Waber
+      *Veronike Gulliman
+    Total Number of Student who taking the course again: 7
      -List Of Students:
-      *Tedra Letham
-    Total Number of Student who couldn't take the course because of prerequisites: 12
+      *Mitchael Moring
+      *Adler Scurman
+      *Lucie Late
+      *Micky Late
+      *Veronike De Caroli
+      *Karl Waber
+      *Veronike Gulliman
+    Total Number of Student who couldn't take the course because of prerequisites: 15
      -List Of Students:
-      *Cal De Caroli
-      *Cal Welham
-      *Charmane Welham
-      *Karl Luchelli
-      *Linda Tatnell
-      *Helaine Wodeland
-      *Perla Welham
-      *Raddy Sugden
-      *Noellyn Late
-      *Marlin Frood
-      *Consuela De Caroli
-      *Athena Rankcom
+      *Athena Saice
+      *Hervey Wodeland
+      *Hollis Tatnell
+      *Tilly Gannaway
+      *Natty Clewes
+      *Charmane Letham
+      *Oliy Vieyra
+      *Tedra Benterman
+      *Rafaellle Renihan
+      *Michelle McMillam
+      *Russ Skouling
+      *Linda Moring
+      *Darren Musson
+      *Antony Gallety
+      *Velvet Wozencroft
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Modelling and Discrete Simulation>>
-    Total Number of Student who successfully enrolled to the course: 4
+    Total Number of Student who successfully enrolled to the course: 3
      -List Of Students:
-      *Antony Moring
-      *Perla Late
-      *Fawnia De Caroli
-      *Lynnet Itzik
-    Total Number of Student who taking the course again: 4
+      *Rafaellle MacGahy
+      *Hertha Dennant
+      *Farleigh Skouling
+    Total Number of Student who taking the course again: 2
      -List Of Students:
-      *Antony Moring
-      *Perla Late
-      *Fawnia De Caroli
-      *Lynnet Itzik
-    Total Number of Student who couldn't take the course because of prerequisites: 8
+      *Rafaellle MacGahy
+      *Hertha Dennant
+    Total Number of Student who couldn't take the course because of prerequisites: 15
      -List Of Students:
-      *Lucie Cuxon
-      *Magnum Clewes
-      *Rebecca Wilks
-      *Michelle Itzik
-      *Ruthann Gulliman
-      *Garik Benterman
-      *Ruthann Wilks
-      *Hollis Vieyra
+      *Lucie Durrance
+      *Cal Gulliman
+      *Rafaellle Boome
+      *Lynnet Domini
+      *Hervey Saice
+      *Lucias Denisovich
+      *Linda Wilks
+      *Linda MacGahy
+      *Welsh Denisovich
+      *Noami Vieyra
+      *Tilly Treharne
+      *Lucias Gallety
+      *Linda Greenhough
+      *Kaycee Waber
+      *Lucias O'Hanley
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Summer Practice II>>
-    Total Number of Student who successfully enrolled to the course: 20
+    Total Number of Student who successfully enrolled to the course: 7
      -List Of Students:
-      *Michelle Domini
-      *Oliy Domini
-      *Kelli Gannaway
-      *Rafaellle Waber
-      *Hervey Bockman
-      *Ruthann Cuxon
-      *Kalle Treharne
-      *Helaine Jaqueme
-      *Kaycee Musson
-      *Noami Letham
-      *Noami O'Hanley
-      *Noami Nowak
-      *Lynnet Wozencroft
-      *Natty Bockman
-      *Raddy Gallety
-      *Karl Durrance
-      *Helaine Frood
-      *Mathian Bockman
-      *Guillema Wodeland
-      *Karl Wilks
-    Total Number of Student who taking the course again: 13
+      *Antony Saice
+      *Consuela O'Hanley
+      *Rebe Moring
+      *Adler De Caroli
+      *Adler Saice
+      *Perla Durrance
+      *Linda Garric
+    Total Number of Student who taking the course again: 6
      -List Of Students:
-      *Michelle Domini
-      *Oliy Domini
-      *Kelli Gannaway
-      *Rafaellle Waber
-      *Hervey Bockman
-      *Kalle Treharne
-      *Helaine Jaqueme
-      *Kaycee Musson
-      *Noami Letham
-      *Noami O'Hanley
-      *Noami Nowak
-      *Karl Durrance
-      *Helaine Frood
+      *Antony Saice
+      *Consuela O'Hanley
+      *Rebe Moring
+      *Adler De Caroli
+      *Adler Saice
+      *Perla Durrance
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Computer Networks>>
-    Total Number of Student who successfully enrolled to the course: 22
+    Total Number of Student who successfully enrolled to the course: 13
      -List Of Students:
-      *Fawnia Renihan
-      *Rebe Greenhough
-      *Rafaellle Late
-      *Ruthann Welham
-      *Rebe Musson
-      *Farleigh McMillam
-      *Benedetta Renihan
-      *Helaine Musson
-      *Cal MacGahy
-      *Kaycee Garric
-      *Micky Late
-      *Hollis Bockman
-      *Lucie Tatnell
-      *Lynnet Late
-      *Tilly Cuxon
-      *Brendin Cuxon
-      *Benedetta Twydell
-      *Tilly Grigoriev
-      *Mitchael Cuxon
-      *Farleigh Twydell
-      *Raddy Basnett
-      *Oliy Nowak
-    Total Number of Student who taking the course again: 19
+      *Garik Cuxon
+      *Perla Saice
+      *Rafaellle Itzik
+      *Darren Late
+      *Kelli Late
+      *Kalle Sugden
+      *Helaine Mcettrick
+      *Micky Gallety
+      *Brendin Muckeen
+      *Michelle O'Hanley
+      *Kaycee Dennant
+      *Karl Garric
+      *Garik Muckeen
+    Total Number of Student who taking the course again: 10
      -List Of Students:
-      *Fawnia Renihan
-      *Rebe Greenhough
-      *Rafaellle Late
-      *Ruthann Welham
-      *Rebe Musson
-      *Farleigh McMillam
-      *Benedetta Renihan
-      *Cal MacGahy
-      *Micky Late
-      *Hollis Bockman
-      *Lucie Tatnell
-      *Lynnet Late
-      *Tilly Cuxon
-      *Brendin Cuxon
-      *Benedetta Twydell
-      *Tilly Grigoriev
-      *Farleigh Twydell
-      *Raddy Basnett
-      *Oliy Nowak
+      *Garik Cuxon
+      *Perla Saice
+      *Rafaellle Itzik
+      *Darren Late
+      *Kalle Sugden
+      *Helaine Mcettrick
+      *Micky Gallety
+      *Brendin Muckeen
+      *Michelle O'Hanley
+      *Karl Garric
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Engineering Project I>>
-    Total Number of Student who successfully enrolled to the course: 21
+    Total Number of Student who successfully enrolled to the course: 12
      -List Of Students:
-      *Velvet Twydell
-      *Brendin Cymper
-      *Welsh Wozencroft
-      *Joann McMillam
-      *Ruthann Clewes
-      *Farleigh Wilks
-      *Adler Gannaway
-      *Marlin Rankcom
-      *Fawnia Boome
-      *Noami Vieyra
-      *Lucie Benterman
-      *Hertha De Caroli
-      *Adler Saice
-      *Kalle Vieyra
-      *Linda Grigoriev
-      *Cal Frood
-      *Tilly Jaqueme
-      *Noami Sugden
-      *Welsh Gannaway
-      *Lucie Letham
-      *Natale Vieyra
-    Total Number of Student who taking the course again: 16
+      *Ruthann Letham
+      *Cal Welham
+      *Darren O'Hanley
+      *Micky Chicchelli
+      *Veronike Domini
+      *Marlin De Caroli
+      *Noellyn Skouling
+      *Consuela Muckeen
+      *Guillema Twydell
+      *Charmane Snodin
+      *Antony MacGahy
+      *Hertha Frood
+    Total Number of Student who taking the course again: 9
      -List Of Students:
-      *Velvet Twydell
-      *Brendin Cymper
-      *Joann McMillam
-      *Ruthann Clewes
-      *Farleigh Wilks
-      *Adler Gannaway
-      *Marlin Rankcom
-      *Fawnia Boome
-      *Noami Vieyra
-      *Hertha De Caroli
-      *Adler Saice
-      *Kalle Vieyra
-      *Linda Grigoriev
-      *Tilly Jaqueme
-      *Welsh Gannaway
-      *Lucie Letham
+      *Ruthann Letham
+      *Cal Welham
+      *Darren O'Hanley
+      *Veronike Domini
+      *Marlin De Caroli
+      *Noellyn Skouling
+      *Consuela Muckeen
+      *Charmane Snodin
+      *Antony MacGahy
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
@@ -766,63 +768,67 @@
 <<İş Sağlığı ve Güvenliği I>>
     Total Number of Student who successfully enrolled to the course: 13
      -List Of Students:
-      *Linda Benterman
-      *Mathian Clewes
-      *Garold Welham
-      *Consuela Muckeen
-      *Garold Wozencroft
-      *Garold Campsall
-      *Perla Itzik
-      *Hervey Treharne
-      *Brendin MacGahy
-      *Michelle Frood
-      *Rebecca Gannaway
-      *Lucias Chicchelli
-      *Adler Cymper
-    Total Number of Student who taking the course again: 11
+      *Mathian Late
+      *Hollis Clewes
+      *Natale Basnett
+      *Tilly Chicchelli
+      *Garold Basnett
+      *Velvet Greenhough
+      *Cal O'Hanley
+      *Charmane Skouling
+      *Lynnet Dennant
+      *Russ MacGahy
+      *Brendin O'Hanley
+      *Consuela Scurman
+      *Brendin Luchelli
+    Total Number of Student who taking the course again: 10
      -List Of Students:
-      *Linda Benterman
-      *Mathian Clewes
-      *Garold Welham
-      *Consuela Muckeen
-      *Garold Wozencroft
-      *Garold Campsall
-      *Perla Itzik
-      *Hervey Treharne
-      *Michelle Frood
-      *Rebecca Gannaway
-      *Lucias Chicchelli
+      *Mathian Late
+      *Hollis Clewes
+      *Natale Basnett
+      *Tilly Chicchelli
+      *Garold Basnett
+      *Velvet Greenhough
+      *Cal O'Hanley
+      *Lynnet Dennant
+      *Russ MacGahy
+      *Brendin O'Hanley
     Total Number of Student who couldn't take the course because of prerequisites: 0
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
 <<Introduction to Machine Learning>>
-    Total Number of Student who successfully enrolled to the course: 3
+    Total Number of Student who successfully enrolled to the course: 6
      -List Of Students:
-      *Ruthann McMillam
-      *Adler MacGahy
-      *Helaine McMillam
-    Total Number of Student who taking the course again: 2
-     -List Of Students:
-      *Ruthann McMillam
-      *Adler MacGahy
-    Total Number of Student who couldn't take the course because of prerequisites: 15
-     -List Of Students:
-      *Rebecca Garric
-      *Consuela Benterman
-      *Ruthann Waber
-      *Kalle Gulliman
-      *Mitchael Chicchelli
-      *Natale Wozencroft
-      *Noellyn Saice
-      *Oliy Musson
-      *Lynnet Renihan
-      *Michelle MacGahy
-      *Rebecca Mcettrick
-      *Natty Nowak
+      *Mitchael De Caroli
+      *Benedetta Muckeen
+      *Garold Gannaway
       *Kelli Welham
-      *Benedetta Treharne
-      *Garik McMillam
+      *Benedetta Welham
+      *Consuela Musson
+    Total Number of Student who taking the course again: 5
+     -List Of Students:
+      *Mitchael De Caroli
+      *Benedetta Muckeen
+      *Garold Gannaway
+      *Kelli Welham
+      *Benedetta Welham
+    Total Number of Student who couldn't take the course because of prerequisites: 14
+     -List Of Students:
+      *Mathian Denisovich
+      *Rafaellle Grigoriev
+      *Lucias Denisovich
+      *Michelle Skouling
+      *Rebecca Muckeen
+      *Tedra Gallety
+      *Hervey Dennant
+      *Tedra Tatnell
+      *Velvet Itzik
+      *Veronike Gallety
+      *Antony Dennant
+      *Lynnet Wodeland
+      *Consuela Durrance
+      *Mitchael Jaqueme
     Total Number of Student who couldn't take the course because of Hour Collusion: 0
     Total Number of Student who couldn't take the course because of they don't have enough credits: 0
     Total Number of Student who couldn't take the course because the is quota full: 0
