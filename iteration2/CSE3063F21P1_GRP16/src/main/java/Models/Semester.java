@@ -12,19 +12,5 @@ public class Semester  {
     this.semesterName = semesterName;
    }
 
-   public Integer getSemesterNo() {
-    return semesterNo;
-   }
 
-   public void setSemesterNo(Integer semesterNo) {
-    this.semesterNo = semesterNo;
-   }
-
-   public SemesterName getSemesterName() {
-    return semesterName;
-   }
-
-   public void setSemesterName(SemesterName semesterName) {
-    this.semesterName = semesterName;
-   }
 }
