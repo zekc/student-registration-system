@@ -42,7 +42,7 @@ public class Main {
         ArrayList<Student> students = new ArrayList<Student>();
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.SPRING, fullCourseList);
 
-        students = generator.GenerateRandomStudents(700, fullCourseList);
+        students = generator.GenerateRandomStudents( fullCourseList);
 
         for (int i = 0; i < students.size(); i = i + 1) {
 

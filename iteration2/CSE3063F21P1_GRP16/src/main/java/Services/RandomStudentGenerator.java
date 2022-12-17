@@ -1,7 +1,9 @@
 package Services;
 
 import Models.Course;
+import Models.Semester;
 import Models.Student;
+import Types.SemesterName;
 
 import java.util.ArrayList;
 
@@ -23,26 +25,38 @@ public class RandomStudentGenerator {
             "Welham", "Luchelli", "Boome", "Gannaway", "Saice", "Greenhough" };
 
 
-
-    public ArrayList<Student> GenerateRandomStudents(int count, ArrayList<Course> courses){
+    // This function generate students and assign courses to them for each semester
+    public ArrayList<Student> GenerateRandomStudents(ArrayList<Course> courses){
+        CourseRegistrationSystem registrationSystem = CourseRegistrationSystem.getRegistrationSystem();
 
 
         ArrayList<Student> students = new ArrayList<Student>();
 
-        for (int i = 0; i < count; i = i + 1) {
+        for (int i = 0; i < 8; i++) {
+            ArrayList<Course> ThisSemesterCourses;
+            Semester semester;
+            for(int j = 0; j < 50; j++){
+                String newFirstName = firstNames[(int) (Math.random() * firstNames.length)];
+                String newLastName = lastNames[(int) (Math.random() * lastNames.length)];
+                students.add(new Student(newFirstName,newLastName,courses));
+            }
+            if (Math.random() * 2 == 0) {
+                ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.FALL, courses);
+                semester = new Semester(i+1, SemesterName.FALL);
+            }
+            else {
+                ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.SPRING, courses);
+                semester = new Semester(i+1, SemesterName.SPRING);
+            }
+            for(int j = 0; j < students.size(); j++){
+                students.get(j).addSemester(ThisSemesterCourses, semester.getSemesterNo(), semester.getSemesterName());
+            }
 
-            String newFirstName = firstNames[(int) (Math.random() * firstNames.length)];
-            String newLastName = lastNames[(int) (Math.random() * lastNames.length)];
-
-            Student tempForStudendt = new Student(newFirstName,newLastName,courses);
-
-
-            students.add(tempForStudendt);
 
 
         }
 
-return students;
+        return students;
 
 
     }

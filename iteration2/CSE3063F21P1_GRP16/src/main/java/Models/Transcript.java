@@ -99,4 +99,18 @@ public class Transcript {
 		return completedCredits;
 	}
 
+	public void addSemester(ArrayList<Course> Courses, Integer semesterNo, SemesterName semesterName){
+		semester = new Semester(semesterNo, semesterName);
+		int PassedAmount = (int) (Math.random() * (Courses.size()));
+		int RandomFailed = (int) (Math.random() * PassedAmount);
+		for (int i = 0; i < PassedAmount; i = i + 1) {
+			if (i == RandomFailed) {
+				failedCourses.add(Courses.get(i));
+			}
+			else {
+				passedCourses.add(Courses.get(i));
+				this.completedCredits+=Courses.get(i).getCredits();
+			}
+		}
+	}
 }

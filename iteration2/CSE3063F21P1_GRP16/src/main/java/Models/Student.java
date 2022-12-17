@@ -1,6 +1,7 @@
 package Models;
 
 import Services.CourseRegistrationSystem;
+import Types.SemesterName;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.io.FileWriter;
@@ -112,5 +113,9 @@ public class Student extends Person {
 
     public void setStudentUtils(StudentUtils studentUtils) {
         this.studentUtils = studentUtils;
+    }
+
+    public void addSemester(ArrayList<Course> Courses, Integer semesterNo, SemesterName semesterName){
+        transcript.addSemester(Courses, semesterNo, semesterName);
     }
 }
