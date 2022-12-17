@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class Student extends Person {
 
@@ -25,7 +26,7 @@ public class Student extends Person {
         StudentSemesterNo = (int) (Math.random() * 5 + 2);
         FirstName = newFirstName;
         LastName = newLastName;
-        transcript = new Transcript(allCourses);
+        transcript = new Transcript(this, allCourses);
         studentUtils=new StudentUtils();
     }
 
@@ -37,29 +38,24 @@ public class Student extends Person {
 
         JSONObject Trans = new JSONObject();
         Trans.put("gpa", transcript.getGPA());
-        JSONArray passedCourses = new JSONArray();
 
-        for (int i = 0; i < transcript.getPassedCourses().size(); i = i + 1) {
-            passedCourses.put(transcript.getPassedCourses().get(i).getCourseCode());
-        }
-
-        JSONArray failedCourses = new JSONArray();
-        for (int i = 0; i < transcript.getFailedCourses().size(); i = i + 1) {
-            failedCourses.put(transcript.getFailedCourses().get(i).getCourseCode());
-        }
+        JSONArray passedCourses = new JSONArray(transcript.getPassedCourses().stream()
+                .map(Course::getCourseCode)
+                .collect(Collectors.toSet())
+        );
+        JSONArray failedCourses = new JSONArray(transcript.getFailedCourses().stream()
+                .map(Course::getCourseCode)
+                .collect(Collectors.toSet())
+        );
 
         obj.put("PassedCourses", passedCourses);
         obj.put("FailedCourses", failedCourses);
-
-        for (int i = 0; i <= passedCourses.length(); i = i + 1) {
-            // passedCourses.put(transcript.passedCourses.get(i).getCourseCode());
-        }
 
         obj.put("TranskriptObj", Trans);
         try {
 
             file = new FileWriter("src/students/" + studentID.getStudentString() + ".json");
-            file.write(obj.toString());
+            file.write(obj.toString(4));
             // System.out.println("json created");
 
         } catch (IOException e) {
@@ -116,6 +112,6 @@ public class Student extends Person {
     }
 
     public void addSemester(ArrayList<Course> Courses, Integer semesterNo, SemesterName semesterName){
-        transcript.addSemester(Courses, semesterNo, semesterName);
+        transcript.addSemester(this, Courses, semesterNo, semesterName);
     }
 }

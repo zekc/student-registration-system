@@ -3,19 +3,12 @@ import Services.CourseRegistrationSystem;
 import Services.JsonService;
 import Services.RandomAdvisorCreator;
 import Services.RandomStudentGenerator;
-import Types.CourseType;
 import Types.SemesterName;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class Main {
@@ -40,7 +33,7 @@ public class Main {
         registrationSystem = CourseRegistrationSystem.getRegistrationSystem();
 
         ArrayList<Student> students = new ArrayList<Student>();
-        ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.SPRING, fullCourseList);
+        ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvailableCourses(SemesterName.SPRING, fullCourseList);
 
         students = generator.GenerateRandomStudents( fullCourseList);
 

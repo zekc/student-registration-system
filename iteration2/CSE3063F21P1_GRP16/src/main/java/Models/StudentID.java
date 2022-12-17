@@ -19,7 +19,7 @@ public class StudentID {
 
     public String getStudentString(){
 
-       return  1501+studentEntryYear+studentEntryOrder;
+       return String.format("1501%s%3s", studentEntryYear, studentEntryOrder).replaceAll(" ", "0");
 
     }
 

@@ -1,10 +1,7 @@
 package Models;
 
 import Services.CourseRegistrationSystem;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import java.io.FileWriter;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,7 +18,7 @@ public class StudentUtils {
 
     public String sendToApprove( ArrayList<Course> courses, Student student) {
         //Sends to registration system for adding modified list to transcript
-        return student.getAdvisor().courseApprovement(student, courses);
+        return student.getAdvisor().courseApproval(student, courses);
     }
 
     public String enrollTheCourse(Student student) {

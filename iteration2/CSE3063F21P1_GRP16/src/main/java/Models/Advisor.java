@@ -1,13 +1,20 @@
 package Models;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Advisor extends Lecturer{
     
     private ArrayList<Course> CourseList;
+    private ArrayList<Student> StudentList;
 
-    public String courseApprovement (Student student, ArrayList<Course> waitingCourses){
-        // Removing disapproved courses from approvement list and adding reminding parts to the transcript through registration system
+    public Advisor(String newName, String newLastName) {
+        FirstName = newName;
+        LastName = newLastName;
+    }
+
+    public String courseApproval(Student student, ArrayList<Course> waitingCourses){
+        // Removing disapproved courses from approval list and adding reminding parts to the transcript through registration system
         ArrayList<Integer> disApprovedCourses = new ArrayList<Integer>();
         for (int i = 0; i < waitingCourses.size(); i++) {
 
@@ -28,7 +35,7 @@ public class Advisor extends Lecturer{
             waitingCourses.get(i).setQuotaCounter(waitingCourses.get(i).getQuotaCounter()+1);
 
             for(int j=0;j<student.getTranscript().getFailedCourses().size();j++){
-                if(waitingCourses.get(i).getCourseCode()==student.getTranscript().getFailedCourses().get(j).getCourseCode()){
+                if(Objects.equals(waitingCourses.get(i).getCourseCode(), student.getTranscript().getFailedCourses().get(j).getCourseCode())){
                     System.out.println("Advisor: The course: " + waitingCourses.get(i).getCourseCode() + " was taken again by the student");
                     waitingCourses.get(i).getCourseEvents().get(1).getStudents().add(student);//student retake the course
                     break;
@@ -45,6 +52,7 @@ public class Advisor extends Lecturer{
         }
 
     }
+
     public String addingCheckedCourses(Student student , ArrayList<Course> courses){
         // Method sends checked courses to registration system
         if (student.getStudentUtils().courseRegistrationSystem.addApprovedCoursesToTranscript(student, courses)){
@@ -53,12 +61,6 @@ public class Advisor extends Lecturer{
         else {
             return "Failed to register";
         }
-    }
-    private ArrayList<Student> StudentList;
-
-    public Advisor(String newName, String newLastName) {
-        FirstName = newName;
-        LastName = newLastName;
     }
 
     public ArrayList<Student> getStudentList() {

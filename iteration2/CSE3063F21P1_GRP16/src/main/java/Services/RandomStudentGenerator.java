@@ -41,11 +41,11 @@ public class RandomStudentGenerator {
                 students.add(new Student(newFirstName,newLastName,courses));
             }
             if (Math.random() * 2 == 0) {
-                ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.FALL, courses);
+                ThisSemesterCourses = registrationSystem.GetAvailableCourses(SemesterName.FALL, courses);
                 semester = new Semester(i+1, SemesterName.FALL);
             }
             else {
-                ThisSemesterCourses = registrationSystem.GetAvaibleCourses(SemesterName.SPRING, courses);
+                ThisSemesterCourses = registrationSystem.GetAvailableCourses(SemesterName.SPRING, courses);
                 semester = new Semester(i+1, SemesterName.SPRING);
             }
             for(int j = 0; j < students.size(); j++){

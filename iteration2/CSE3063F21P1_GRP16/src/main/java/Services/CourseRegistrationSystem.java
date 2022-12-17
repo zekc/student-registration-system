@@ -13,13 +13,13 @@ public class CourseRegistrationSystem {
     public ArrayList<Course> checkSelectedCourses(Student student, ArrayList<Course> courses) {
         // Get course codes of passed courses
         List<String> passedCourses = student.getTranscript().getPassedCourses()
-                .stream().map(c -> c.getCourseCode())
+                .stream().map(Course::getCourseCode)
                 .collect(Collectors.toList());
 
         ArrayList<Course> checkedCourses = new ArrayList<>();
 
         for (Course course : courses) {
-            if(checkPrereq( passedCourses,course.getPrerequisiteCourse())) {
+            if(checkPrerequisite( passedCourses,course.getPrerequisiteCourse())) {
                 if (course.getQuota() > course.getQuotaCounter()) {
                     checkedCourses.add(course);
                     // Check if the course has any prerequisite
@@ -27,12 +27,12 @@ public class CourseRegistrationSystem {
                 } else {
 
                     course.getCourseEvents().get(5).getStudents().add(student);//add student to course Event2
-                    System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to quota");
+                    System.out.println("Services.CourseRegistrationSystem: The course: " + course.getCourseCode() + " not added due to quota");
                 }
             }
             else{
                 course.getCourseEvents().get(2).getStudents().add(student);//add student to course Event2
-                System.out.println("Services.CourseRegisterationSystem: The course: " + course.getCourseCode() + " not added due to prerequisite");
+                System.out.println("Services.CourseRegistrationSystem: The course: " + course.getCourseCode() + " not added due to prerequisite");
 
             }
         }
@@ -41,27 +41,27 @@ public class CourseRegistrationSystem {
         return checkedCourses;
     }
 
-    private boolean checkPrereq(List<String> arr,String prerequisiteCourse) {
+    private boolean checkPrerequisite(List<String> arr, String prerequisiteCourse) {
         if(!prerequisiteCourse.equals("non")) {
-            for (int i = 0; i < arr.size(); i++) {
-                if (arr.get(i).equals(prerequisiteCourse)) {
+            for (String s : arr) {
+                if (s.equals(prerequisiteCourse)) {
                     return false;
                 }
-
             }
-            return true;
         }
-        else{
-            return true;
-        }
+        return true;
     }
 
     public boolean addApprovedCoursesToTranscript(Student student, ArrayList<Course> courses){
-        return student.getTranscript().addCourses(student, courses);
+        try {
+            return student.getTranscript().addCourses(student, courses);
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 
-    public  ArrayList<Course> GetAvaibleCourses(SemesterName semester, ArrayList<Course> allCourses) {
+    public  ArrayList<Course> GetAvailableCourses(SemesterName semester, ArrayList<Course> allCourses) {
         ArrayList<Course> ACourses = new ArrayList<Course>();
 
         for (int i = 0; i < allCourses.size(); i = i + 1) {
