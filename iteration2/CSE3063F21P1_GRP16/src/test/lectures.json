@@ -1,0 +1,85 @@
+{
+  "courses": [
+    {
+      "courseName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+      "courseCode": "ATA121",
+      "credit": 2,
+      "preRequisiteCourse": [],
+      "courseSessions": [
+        {
+          "quota": 20,
+          "sessionHours": [
+            {
+              "day": 1,
+              "hour": 2
+            },
+            {
+              "day": 1,
+              "hour": 1
+            }
+          ]
+        }
+      ],
+      "requiredCredits": 0,
+      "courseSemester": 1,
+      "courseType": "MANDATORY"
+    },
+    {
+      "courseName": "Introduction to Modern Biology",
+      "courseCode": "MBG1201",
+      "credit": 5,
+      "preRequisiteCourse": [],
+      "courseSessions": [
+        {
+          "quota": 20,
+          "sessionHours": [
+            {
+              "day": 2,
+              "hour": 2
+            },
+            {
+              "day": 2,
+              "hour": 3
+            },
+            {
+              "day": 4,
+              "hour": 3
+            }
+          ]
+        }
+      ],
+      "requiredCredits": 0,
+      "courseSemester": 1,
+      "courseType": "MANDATORY"
+    },
+    {
+      "courseName": "Introduction to Computer Engineering",
+      "courseCode": "CSE1200",
+      "credit": 4,
+      "preRequisiteCourse": [],
+      "courseSessions": [
+        {
+          "quota": 20,
+          "sessionHours": [
+            {
+              "day": 2,
+              "hour": 4
+            },
+            {
+              "day": 4,
+              "hour": 1
+            },
+            {
+              "day": 4,
+              "hour": 2
+            }
+          ]
+        }
+      ],
+      "requiredCredits": 0,
+      "courseSemester": 1,
+      "courseType": "MANDATORY"
+    }
+  ]
+}
+

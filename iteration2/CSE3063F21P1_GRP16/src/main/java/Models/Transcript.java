@@ -91,6 +91,7 @@ public class Transcript {
 		return false;
 	}
 
+	// Adapter method
 	public void addSemester(Student student, List<Course> courses, Integer semesterNo, SemesterName semesterName) {
 		if (this.student == student) {
 			Set<StudentCourseScore> newScores = courses.stream()

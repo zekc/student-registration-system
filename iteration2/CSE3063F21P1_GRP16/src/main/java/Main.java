@@ -19,8 +19,6 @@ public class Main {
 
         File StudentsFile = new File("src/students");
 
-
-
         JsonService jsonService = new JsonService(StudentsFile);
 
         ArrayList<Advisor> advisors = jsonService.InitAdvisors("src/advisors.json");
@@ -35,10 +33,7 @@ public class Main {
         ArrayList<Course> ThisSemesterCourses = registrationSystem.GetAvailableCourses(SemesterName.SPRING, fullCourseList);
 
         for (int i = 0; i < students.size(); i = i + 1) {
-
             students.get(i).setAdvisor(advisors.get((int) (Math.random() * advisors.size())));
-
-
         }
 
         System.out.println("Available Classes This Semester: \n");
@@ -52,12 +47,6 @@ public class Main {
             students.get(i).saveToJson();
         }
 
-        jsonService.outputFileCreator(ThisSemesterCourses);
-
-
+        JsonService.outputFileCreator(ThisSemesterCourses);
     }
-
-
-
-
 }
