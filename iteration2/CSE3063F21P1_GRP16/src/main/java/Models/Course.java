@@ -73,9 +73,4 @@ public class Course {
         this.quota = quota;
     }
 
-
-
-
-
-
 }
