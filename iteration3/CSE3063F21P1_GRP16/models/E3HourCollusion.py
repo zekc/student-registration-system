@@ -9,6 +9,9 @@ from Student import Student
 class E3HourCollusion(CourseEvents):
     def __init__(self):
         self._students = []
+        
+    def getStudents(self):
+        return self._students    
 
     def toString(self):
         s = "    Total Number of Student who couldn't take the course because of Hour Collusion: {}\n".format(len(self._students))
