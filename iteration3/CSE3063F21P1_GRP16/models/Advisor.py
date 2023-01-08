@@ -1,6 +1,6 @@
 from typing import List
 
-from models import Student, Course
+from . import Student, Course
 from models.Lecturer import Lecturer
 
 
