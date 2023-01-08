@@ -1,7 +1,7 @@
 import random
 from typing import List
 
-from CSE3063F21P1_GRP16.models import Student, Course
+from models import Student, Course
 
 class StudentUtils:
     def __init__(self):
