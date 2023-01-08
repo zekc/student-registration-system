@@ -1,16 +1,16 @@
 class CourseSection:
     def __init__(self, allstudent):
-        self.__allstudent = allstudent
-        self.__selectedCourses = []
+        self._allstudent = allstudent
+        self._selectedCourses = []
 
     def getAllstudent(self):
-        return self.__allstudent
+        return self._allstudent
 
     def setAllstudent(self, allstudent):
-        self.__allstudent = allstudent
+        self._allstudent = allstudent
 
     def getSelectedCourses(self):
-        return self.__selectedCourses
+        return self._selectedCourses
 
     def setSelectedCourses(self, selectedCourses):
-        self.__selectedCourses = selectedCourses
+        self._selectedCourses = selectedCourses
