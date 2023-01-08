@@ -1,44 +1,44 @@
 class Course:
     def __init__(self, courseName, courseCode, quota, prerequisiteCourse, credits, semester, courseType, sessions, requiredCredits):
-        self.__courseName = courseName
-        self.__courseCode = courseCode
-        self.__quota = quota
-        self.__prerequisiteCourse = prerequisiteCourse
-        self.__credits = credits
-        self.__courseSemesterName = semester
-        self.__courseType = courseType
-        self.__sessions = sessions
-        self.__quotaCounter = 0
-        self.__requiredCredits = requiredCredits
-        self.__CourseEvents = []
+        self._courseName = courseName
+        self._courseCode = courseCode
+        self._quota = quota
+        self._prerequisiteCourse = prerequisiteCourse
+        self._credits = credits
+        self._courseSemesterName = semester
+        self._courseType = courseType
+        self._sessions = sessions
+        self._quotaCounter = 0
+        self._requiredCredits = requiredCredits
+        self._CourseEvents = []
         self.set_events()
 
     def set_events(self):
-        self.__CourseEvents.append(E0Success())
-        self.__CourseEvents.append(E1ReTakeCourse())
-        self.__CourseEvents.append(E2prerequisite())
-        self.__CourseEvents.append(E3HourCollusion())
-        self.__CourseEvents.append(E4NoEnoughCredits())
-        self.__CourseEvents.append(E5Quota())
+        self._CourseEvents.append(E0Success())
+        self._CourseEvents.append(E1ReTakeCourse())
+        self._CourseEvents.append(E2prerequisite())
+        self._CourseEvents.append(E3HourCollusion())
+        self._CourseEvents.append(E4NoEnoughCredits())
+        self._CourseEvents.append(E5Quota())
 
     def getCourseEvents(self):
-        return self.__CourseEvents
+        return self._CourseEvents
 
     # getters and setters
     def getcourseName(self):
-        return self.__courseName
+        return self._courseName
 
     def setcourseName(self, courseName):
-        self.__courseName = courseName
+        self._courseName = courseName
 
     def getCourseCode(self):
-        return self.__courseCode
+        return self._courseCode
 
     def setCourseCode(self, courseCode):
-        self.__courseCode = courseCode
+        self._courseCode = courseCode
 
     def getQuota(self):
-        return self.__quota
+        return self._quota
 
     def setQuota(self, quota):
-        self.__quota = quota
+        self._quota = quota

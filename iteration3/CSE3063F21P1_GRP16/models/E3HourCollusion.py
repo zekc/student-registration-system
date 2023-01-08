@@ -6,18 +6,18 @@ from CourseEvents import CourseEvents
 from Student import Student
 
 
-class E3HourCollusion:
+class E3HourCollusion(CourseEvents):
     def __init__(self):
-        self.__students = []
+        self._students = []
 
-    def __str__(self):
-        s = "    Total Number of Student who couldn't take the course because of Hour Collusion: {}\n".format(len(self.__students))
-        if len(self.__students) > 0:
+    def toString(self):
+        s = "    Total Number of Student who couldn't take the course because of Hour Collusion: {}\n".format(len(self._students))
+        if len(self._students) > 0:
             s += "     -List Of students:\n"
         else:
             s += "\n"
 
-        for i in range(len(self.__students)):
-            s += "      *{} {}\n".format(self.__students[i].getFirstName(), self.__students[i].getLastName())
+        for i in range(len(self._students)):
+            s += "      *{} {}\n".format(self._students[i].getFirstName(), self._students[i].getLastName())
 
         return s
