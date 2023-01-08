@@ -8,7 +8,7 @@ from Student import Student
 
 class E2prerequisite(CourseEvents):
     def __init__(self):
-        self.__students = []
+        self._students = []
 
     def toString(self):
         s = "    Total Number of Student who couldn't take the course because of prerequisites: {}\n".format(len(self._students))
