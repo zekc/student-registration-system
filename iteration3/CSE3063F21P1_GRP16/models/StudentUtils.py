@@ -24,7 +24,7 @@ class StudentUtils:
             self._selected_courses.append(course)
 
     def select_random_courses(self, available_courses: List[Course], student: Student):
-        print(f"{student.first_name} {student.last_name} is selecting course")
+        print(f"{student._first_name} {student._last_name} is selecting course")
         self._selected_courses.clear()
         random_amount = int(min(max(5, len(available_courses) * random.random()), 1))
         for i in range(random_amount):
