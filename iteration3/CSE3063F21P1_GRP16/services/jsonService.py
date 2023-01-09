@@ -1,6 +1,10 @@
 import json
 import os.path
-from CSE3063F21P1_GRP16.models.Course import Course
+
+from models.Course import Course
+
+
+#from CSE3063F21P1_GRP16.models.Course import Course
 
 
 
@@ -14,9 +18,6 @@ def InitAdvisors():
     for i in data['advisors']:
         # advisors.append(Advisor(i["AdvisorName"],i["AdvisorLastName"]))
         print(i["AdvisorName"])
-
-        
-        
 
         
     f.close()
