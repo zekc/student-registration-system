@@ -11,7 +11,7 @@ class Course:
         self._quotaCounter = 0
         self._requiredCredits = requiredCredits
         self._CourseEvents = []
-        self.set_events()
+        #self.set_events() bug var
 
     def set_events(self):
         self._CourseEvents.append(E0Success())

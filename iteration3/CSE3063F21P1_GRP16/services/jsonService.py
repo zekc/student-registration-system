@@ -1,5 +1,6 @@
 import json
 import os.path
+from CSE3063F21P1_GRP16.models.Course import Course
 
 
 
@@ -11,8 +12,9 @@ def InitAdvisors():
     f = open(os.path.dirname(__file__) + '/../advisors.json')
     data = json.load(f)
     for i in data['advisors']:
-        #advisors.append(Advisor(i["AdvisorName"],i["AdvisorLastName"]))
-        print(type(i['AdvisorName']))
+        # advisors.append(Advisor(i["AdvisorName"],i["AdvisorLastName"]))
+        print(i["AdvisorName"])
+
         
         
 
@@ -33,8 +35,9 @@ def InitLectures():
     data = json.load(f)
     for i in data['courses']:
        # print(i['courseSessions'][0]['quota'])
+
        courses.append(Course(i['courseName'],i['courseCode'],int(i['courseSessions'][0]['quota']),0,int(i['credit']),int(i['courseSemester']),i['courseType'],5,int(i['requiredCredits'])))
-        
+
 
         
     f.close()

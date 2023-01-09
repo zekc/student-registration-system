@@ -6,6 +6,9 @@ def main():
     advisors = jsonService.InitAdvisors()
     
     courses = jsonService.InitLectures()
+
+    for x in courses:
+        print(x.getcourseName())
    
 
 

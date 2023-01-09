@@ -1,7 +1,11 @@
 from typing import List
 
-from . import Student, Course
-from models.Lecturer import Lecturer
+
+
+
+from CSE3063F21P1_GRP16.models.Student import Student
+from CSE3063F21P1_GRP16.models.Course import Course
+from CSE3063F21P1_GRP16.models.Lecturer import Lecturer
 
 
 class Advisor(Lecturer):

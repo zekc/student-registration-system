@@ -2,8 +2,9 @@ import json
 import random
 from typing import List
 
-from models.Course import Course
-from models.StudentUtils import StudentUtils
+
+from CSE3063F21P1_GRP16.models.Course import Course
+from CSE3063F21P1_GRP16.models.StudentUtils import StudentUtils
 
 
 class Student:
