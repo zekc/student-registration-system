@@ -5,6 +5,7 @@ from typing import List
 
 from CSE3063F21P1_GRP16.models.Course import Course
 from CSE3063F21P1_GRP16.models.StudentUtils import StudentUtils
+from CSE3063F21P1_GRP16.models.Transcript import Transcript
 
 
 class Student:

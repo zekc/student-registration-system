@@ -1,8 +1,6 @@
 from typing import List
 
 
-
-
 from CSE3063F21P1_GRP16.models.Student import Student
 from CSE3063F21P1_GRP16.models.Course import Course
 from CSE3063F21P1_GRP16.models.Lecturer import Lecturer

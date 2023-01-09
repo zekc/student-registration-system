@@ -1,5 +1,5 @@
 
-from models.Staff import Staff
+from CSE3063F21P1_GRP16.models.Staff import Staff
 
 
 class Lecturer(Staff):

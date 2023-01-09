@@ -1,4 +1,4 @@
-from models.Person import Person
+from CSE3063F21P1_GRP16.models.Person import Person
 
 
 class Staff(Person):
