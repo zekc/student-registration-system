@@ -1,17 +1,19 @@
 import json
-import random
+from random import randint
 from typing import List
 
 
 from CSE3063F21P1_GRP16.models.Course import Course
 from CSE3063F21P1_GRP16.models.StudentUtils import StudentUtils
 from CSE3063F21P1_GRP16.models.Transcript import Transcript
+from CSE3063F21P1_GRP16.models.StudentID import StudentID
+from CSE3063F21P1_GRP16.type.SemesterName import SemesterName
 
 
 class Student:
     def __init__(self, new_first_name: str, new_last_name: str, all_courses: List[Course]):
-        self._student_id = StudentID("CSE", str(int(max(18, random.random() * 20))), str(int(max(10, int(random.random() * 50)))))
-        self._student_semester_no = int(random.random() * 5 + 2)
+        self._student_id = StudentID("CSE", str(max(18, randint(0, 20))), str(max(10, randint(0, 50))))
+        self._student_semester_no = randint(0, 5) + 2
         self._first_name = new_first_name
         self._last_name = new_last_name
         self._transcript = Transcript(self, all_courses)

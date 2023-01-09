@@ -1,10 +1,12 @@
 import random
 
+from models.StudentCourseScore import StudentCourseScore
+
 
 class Transcript:
     def __init__(self, student, courses):  # Transcript
         self.student = student
-        self.scores = {StudentCourseScore(student, course, random.uniform(4.0)) for course in courses}
+        self.scores = {StudentCourseScore(student, course, random.uniform(0, 4.0)) for course in courses}
         self.calculateGpa()
 
     def calculateGpa(self):

@@ -14,7 +14,7 @@ class E5Quota(CourseEvents):
     
     def toString(self):
         s = "    Total Number of Student who couldn't take the course because the is quota full: {}".format(len(self._students))
-        if self.students:
+        if self._students:
             s += "\n     -List Of Students:\n"
         else:
             s += "\n"
